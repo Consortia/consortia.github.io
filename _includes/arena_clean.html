@@ -1,0 +1,12 @@
+{% for block in site.data[page.channel].contents %}
+  <div style="padding-bottom: 30px;">
+    <a href="https://www.are.na/block/{{block.id}}">
+      {% if block.image %}
+        <img src="{{block.image.display.url}}">
+      {% endif %}
+      {% if block.content %}
+        <div>{{block.content}}</div>
+      {% endif %}
+    </a>
+  </div>
+{% endfor %}

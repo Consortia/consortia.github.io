@@ -1,0 +1,24 @@
+---
+layout: default
+channel: hd
+---
+
+{% for block in site.data[layout.channel].contents %}
+<div class="container-fluid home-page" style="background-image:url('{{block.image.original.url}}')">
+{% endfor %}
+
+  <div class="row vertical-center no-gutters">
+
+      <div class="col-xs-2 col-sm-4">
+        <a class="header-left" href="/office.html">Office</a>
+      </div>
+      <div class="col-xs-8 col-sm-4">
+        <a class="header-center" href="{{ '/' | relative_url }}">consortia</a>
+      </div>
+      <div class="col-xs-2 col-sm-4">
+        <a class="header-right" href="/ideas.html">Ideas</a>
+      </div>
+
+  </div>
+
+</div>

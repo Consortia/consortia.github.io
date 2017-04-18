@@ -1,0 +1,23 @@
+<div class="arena-content">
+  {% for block in site.data[page.channel].contents %}
+
+      <a href="https://www.are.na/block/{{block.id}}">
+        {% if block.class == "Channel" %}
+          <div class="channel-block">
+            <div class="channel-title">
+              {{block.title}}
+            </div>
+          </div>
+        {% else %}
+          <div style="padding-bottom: 10px;">{{block.title}}</div>
+        {% endif %}
+        {% if block.image %}
+          <img src="{{block.image.display.url}}">
+        {% endif %}
+        {% if block.content %}
+          <div>{{block.content}}</div>
+        {% endif %}
+      </a>
+
+  {% endfor %}
+</div>

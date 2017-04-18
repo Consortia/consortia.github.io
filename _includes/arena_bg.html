@@ -1,0 +1,7 @@
+{% for block in site.data[page.channel].contents %}
+<div>
+  {% if block.image %}
+  <img src="{{block.image.original.url}}">
+  {% endif %}
+</div>
+{% endfor %}
