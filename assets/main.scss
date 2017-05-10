@@ -4,7 +4,7 @@
 @charset "utf-8";
 
 // Our variables
-$base-font-family: "Atlas Grotesk", Helvetica, Arial, sans-serif;
+$base-font-family: "Atlas Grotesk Web", Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
@@ -43,22 +43,56 @@ $on-laptop:        100%;
 }
 
 @font-face {
-	font-family: "Atlas Grotesk";
-	src: url("fonts/AtlasGrotesk-Bold.otf");
-	font-weight: bold;
-	font-style: normal;
+  font-family: 'Atlas Grotesk Web';
+  src: url('fonts/AtlasGrotesk-Bold-Web.eot');
+  src: url('fonts/AtlasGrotesk-Bold-Web.eot?#iefix') format('embedded-opentype'),
+       url('fonts/AtlasGrotesk-Bold-Web.woff2') format('woff2'),
+       url('fonts/AtlasGrotesk-Bold-Web.woff') format('woff');
+  font-weight:  700;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+.AtlasGrotesk-Bold-Web {
+  font-family: 'Atlas Grotesk Web';
+  font-weight:  700;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+
+@font-face {
+  font-family: 'Atlas Grotesk Web';
+  src: url('fonts/AtlasGrotesk-Light-Web.eot');
+  src: url('fonts/AtlasGrotesk-Light-Web.eot?#iefix') format('embedded-opentype'),
+       url('fonts/AtlasGrotesk-Light-Web.woff2') format('woff2'),
+       url('fonts/AtlasGrotesk-Light-Web.woff') format('woff');
+  font-weight:  300;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+.AtlasGrotesk-Light-Web {
+  font-family: 'Atlas Grotesk Web';
+  font-weight:  300;
+  font-style:   normal;
+  font-stretch: normal;
 }
 
 @font-face {
-	font-family: "Atlas Grotesk";
-	src: url("fonts/AtlasGrotesk-Light.otf");
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'Founders Grotesk Web';
+  src: url('fonts/FoundersGroteskMonoWeb-Light.eot');
+  src: url('fonts/FoundersGroteskMonoWeb-Light.eot?#iefix') format('embedded-opentype'),
+       url('fonts/FoundersGroteskMonoWeb-Light.woff2') format('woff2'),
+       url('fonts/FoundersGroteskMonoWeb-Light.woff') format('woff');
+  font-weight:  300;
+  font-style:   normal;
+  font-stretch: normal;
 }
 
-@font-face {
-	font-family: "Founders Grotesk";
-	src: url("fonts/FoundersGroteskMonoLight.otf");
-	font-weight: normal;
-	font-style: normal;
+.FoundersGroteskMonoWeb-Light {
+  font-family: 'Founders Grotesk Web';
+  font-weight:  300;
+  font-style:   normal;
+  font-stretch: normal;
 }

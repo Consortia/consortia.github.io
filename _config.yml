@@ -13,16 +13,25 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: consortia
+title: Consortia
 email: info@consortia.net
 description: Consortia is a creative office in New York City. We develop new frameworks for communication.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: consortianet
-github_username:  consortia
+twitter:
+  username: consortianet
+facebook:
+  publisher: https://www.facebook.com/consortianet/
+logo: /assets/images/consortia-logo.png
+social:
+  links:
+    - https://twitter.com/consortianet
+    - https://are.na/consortia-systems
+    - https://www.facebook.com/consortianet
+    - https://www.instagram.com/consortianet
 
 # Build settings
-highlighter: true
+highlighter: rouge
 markdown: kramdown
 permalink: /:categories/:title.html
 sass:
@@ -30,13 +39,14 @@ sass:
 include: ['_pages']
 gems:
   - jekyll-feed
+  - jekyll-seo-tag
 exclude:
   - Gemfile
   - Gemfile.lock
 jekyll_get:
   - data: techno-animism
-    json: 'http://api.are.na/v2/channels/techno-animism'
+    json: 'http://api.are.na/v2/channels/techno-animism?per=10'
   - data: consortia office
     json: 'http://api.are.na/v2/channels/consortia-office'
   - data: hd
-    json: 'http://api.are.na/v2/channels/hd'
+    json: 'http://api.are.na/v2/channels/hd?per=4'

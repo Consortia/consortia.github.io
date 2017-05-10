@@ -63,8 +63,8 @@ img {
 
 
 .caption {
-  font-family: "Founders Grotesk";
-  font-style: normal;
+  font-family: "Founders Grotesk Web";
+  font-weight: 300;
   font-size: 0.7em;
   color: $grey-color;
   width: 100%;
@@ -80,8 +80,8 @@ img {
 }
 
 .header-caption {
-  font-family: "Founders Grotesk";
-  font-style: normal;
+  font-family: "Founders Grotesk Web";
+  font-style: 300;
   font-size: 0.7em;
   color: $grey-color;
   padding-top: $spacing-unit / 3;
@@ -114,6 +114,8 @@ ul, ol {
 }
 
 li {
+  margin: 15px 0;
+  line-height: 1.3;
   > ul,
   > ol {
     margin-bottom: 0;
