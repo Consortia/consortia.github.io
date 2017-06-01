@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Consortia
 email: info@consortia.net
-description: Consortia is a creative office in New York City. We develop new frameworks for communication.
+description: Consortia is a creative office in New York. We develop new frameworks for communication.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter:
@@ -40,13 +40,14 @@ include: ['_pages']
 gems:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-paginate
 exclude:
   - Gemfile
   - Gemfile.lock
 jekyll_get:
-  - data: techno-animism
-    json: 'http://api.are.na/v2/channels/techno-animism?per=10'
+  - data: taxonomy
+    json: 'https://api.are.na/v2/channels/taxonomy-of-branded-spaces'
   - data: consortia office
     json: 'http://api.are.na/v2/channels/consortia-office'
-  - data: hd
-    json: 'http://api.are.na/v2/channels/hd?per=4'
+  - data: feed
+    json: 'http://api.are.na/v2/channels/feed-1494976615?per=5'

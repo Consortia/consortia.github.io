@@ -2,6 +2,7 @@
 title: ideas
 permalink: ideas.html
 layout: default
+channel: feed
 ---
 
 <div class="container-fluid page-nav">
@@ -11,32 +12,32 @@ layout: default
       <header class="header-down">
           <div class="row no-gutters">
             <div class="col-xs-2 col-sm-4">
-              <a class="header-left" href="/office.html">Office</a>
+              <a class="header-left" style="text-decoration: underline;" href="/ideas.html">Ideas</a>
             </div>
             <div class="col-xs-8 col-sm-4">
               <a class="header-center" href="{{ '/' | relative_url }}">consortia</a>
             </div>
             <div class="col-xs-2 col-sm-4">
-              <a class="header-right" style="text-decoration: underline;" href="/ideas.html">Ideas</a>
+              <a class="header-right" href="/office.html">Office</a>
             </div>
           </div>
       </header>
     </div>
   </div>
 
+
   <div class="row no-gutters">
     <div class="col-xs-1">
       <div class="position">
         <div class="rotate">
-          <span class="page-heading">Latest</span>
+          <span class="page-heading">Blog</span>
         </div>
       </div>
     </div>
-    <div class="col-sm-7">
-
-      <div class="row no-gutters">
+    <div class="col-sm-7" style="padding-left: 0px;">
+        <div class="row no-gutters">
           <div class="page-content">
-            <div class="post-list">
+            <article class="post-list">
             {% for post in site.categories.blog %}
               <li>
               <a href="{{ post.url | relative_url }}">
@@ -45,26 +46,27 @@ layout: default
                 </div>
                 <div class="col-xs-5">
                   <div class="post-link">{{ post.title | escape }}</div>
-                <div><div class="post-meta-small">by {{ post.author }}</div></div>
+                  <div class="post-meta-small">by {{ post.author }}
+                  <br>{{ post.date | date: '%B %d, %Y' }}</div>
               </div>
               </a>
               </li>
               {% endfor %}
-            </div>
+            </article>
           </div>
-      </div>
+        </div>
     </div>
     <div class="col-xs-1">
       <div class="position">
         <div class="rotate">
-          <span class="page-heading">Feed</span>
+          <span class="page-heading">Issues</span>
         </div>
       </div>
     </div>
-    <div class="col-sm-3">
+    <div class="col-sm-3" style="padding-right: 15px; padding-left: 30px;">
       <div class="page-content">
         {% include arena_feed.html %}
       </div>
     </div>
-
+  </div>
 </div>

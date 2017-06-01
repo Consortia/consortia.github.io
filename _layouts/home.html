@@ -3,8 +3,14 @@ layout: default
 channel: hd
 ---
 
-<div class="background-wrapper">
+<!--<div class="background-wrapper">
 {% include arena_bg.html %}
+</div>-->
+
+<div id="video">
+    <video autoplay loop class="video">
+        <!--<source src="assets/video/summer.mp4" type="video/mp4">-->
+    </video>
 </div>
 
 <div class="container-fluid home-page">
@@ -12,13 +18,13 @@ channel: hd
   <div class="row vertical-center no-gutters">
 
       <div class="col-xs-2 col-sm-4">
-        <a class="header-left" style="color:white;" href="/office.html">Office</a>
+        <a class="header-left" style="color:white;" href="/ideas.html">Ideas</a>
       </div>
       <div class="col-xs-8 col-sm-4">
         <a class="header-center" style="color:white;" href="{{ '/' | relative_url }}">consortia</a>
       </div>
       <div class="col-xs-2 col-sm-4">
-        <a class="header-right" style="color:white;" href="/ideas.html">Ideas</a>
+        <a class="header-right" style="color:white;" href="/office.html">Office</a>
       </div>
 
   </div>
@@ -26,3 +32,5 @@ channel: hd
 
 
 </div>
+
+<script src="/assets/javascripts/randomvideo.js"></script>

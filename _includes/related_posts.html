@@ -18,9 +18,10 @@
   {% if sameTagCount >= minCommonTags %}
   <div class="related-container">
     <a href="{{ post.url | relative_url }}">
-      <img style="height: 150px; width: 100%; object-fit:cover;" src="{{ site.baseurl }}/assets/images/{{ post.image }}">
+      <img style="width: 100%; height: auto;" src="{{ site.baseurl }}/assets/images/{{ post.image }}">
       <div class="related-title">{{ post.title | escape }}</div>
-      <div class="related-meta" style="padding-top: 0;">by {{ post.author }}</div>
+      <div class="related-meta">by {{ post.author }}
+      <br>{{ page.date | date: '%B %d, %Y' }}</div>
     </a>
   </div>
     {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}

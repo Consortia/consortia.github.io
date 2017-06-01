@@ -1,13 +1,29 @@
-<div class="arena-content">
+<div class="arena-content-feed">
   {% for block in site.data[page.channel].contents %}
-
-      <a href="https://www.are.na/block/{{block.id}}">
-        {% if block.class == "Channel" %}
-          <div class="channel-block">
-            <div class="channel-title">
-              {{block.title}}
+    <li style="padding-bottom: 15px; margin-top: 0px; list-style:none;">
+      <a target="_blank" href="https://www.are.na/{{block.user.slug}}/{{block.slug}}">
+        {% if block.class == "Channel" and block.status == "closed" %}
+          <div class="channel-block-feed-closed">
+            <div class="channel-text-closed">
+              <div class="channel-title-closed">
+                {{block.title}}
+              </div>
+              <div class="channel-description-closed">
+                {{block.metadata.description}}
+              </div>
             </div>
           </div>
+        {% else if block.class == "Channel" and block.status == "open" %}
+        <div class="channel-block-feed-open">
+          <div class="channel-text-open">
+            <div class="channel-title-open">
+              {{block.title}}
+            </div>
+            <div class="channel-description-open">
+              {{block.metadata.description}}
+            </div>
+          </div>
+        </div>
         {% else %}
           <div style="padding-bottom: 10px;">{{block.title}}</div>
         {% endif %}
@@ -18,6 +34,6 @@
           <div>{{block.content}}</div>
         {% endif %}
       </a>
-
+    </li>
   {% endfor %}
 </div>

@@ -10,13 +10,13 @@ layout: default
       <header class="header-down">
           <div class="row no-gutters">
             <div class="col-xs-2 col-sm-4">
-              <a class="header-left" href="/office.html">Office</a>
+              <a class="header-left" style="text-decoration: underline;" href="/ideas.html">Ideas</a>
             </div>
             <div class="col-xs-8 col-sm-4">
               <a class="header-center" href="{{ '/' | relative_url }}">consortia</a>
             </div>
             <div class="col-xs-2 col-sm-4">
-              <a class="header-right" style="text-decoration: underline;" href="/ideas.html">Ideas</a>
+              <a class="header-right" href="/office.html">Office</a>
             </div>
           </div>
       </header>
@@ -35,7 +35,7 @@ layout: default
 
    <div class="col-xs-11">
      <div class="row no-gutters">
-       <div class="col-xs-10 col-sm-8" style="margin-left: -30px;">
+       <div class="col-xs-10 col-sm-8" style="margin-left: -60px;">
          <!--<time class="post-meta-small" style="float:right;" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>-->
          {% if page.image %}
          <img class="post-header" src="{{ site.baseurl }}/assets/images/{{ page.image }}">
@@ -45,7 +45,8 @@ layout: default
        <div class="col-xs-2 col-sm-4" style="padding:0;">
          <span class="post-title-large" itemprop="name headline">{{ page.title | escape }}</span>
          {% if page.author %} <!--<p class="post-meta" itemprop="author" itemscope itemtype="http://schema.org/Person">-->
-         <div class="post-meta" itemprop="name">by {{ page.author }}</div>
+         <div class="post-meta" itemprop="name">by {{ page.author }}
+          <br>{{ page.date | date: '%B %d, %Y' }}</div>
          {% endif %}
        </div>
      </div>
@@ -68,7 +69,7 @@ layout: default
         </div>
     </div>
 
-    <div class="col-xs-12 col-sm-7">
+    <div class="col-xs-12 col-sm-7" style="padding-left: 0px;">
       <div class="post-content">
         {{ content }}
       </div>
@@ -103,7 +104,7 @@ layout: default
           </div>
         </div>
     </div>
-    <div class="col-xs-11">
+    <div class="col-xs-11" style="padding-left: 0px;">
       <div class="page-content">
         {% include related_posts.html %}
     </div>

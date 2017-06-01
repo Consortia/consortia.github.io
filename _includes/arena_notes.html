@@ -1,24 +1,33 @@
 <ol class="notes">
   <div class="arena-content">
     {% for block in site.data[page.channel].contents %}
-      <li style="padding-bottom: 30px;">
-        <a href="https://www.are.na/block/{{block.id}}">
+      <li style="padding-bottom: 15px; margin-top: 0px;">
           {% if block.class == "Channel" %}
-            <div class="channel-block">
-              <div class="channel-title">
-                {{block.title}}
+            {% if block.status == "closed" %}
+            <a target="_blank" href="https://www.are.na/{{block.user.slug}}/{{block.slug}}">
+              <div class="channel-block-closed">
+                <div class="channel-title-closed">{{block.title}}</div>
               </div>
-            </div>
+            </a>
+            {% else %}
+            <a target="_blank" href="https://www.are.na/{{block.user.slug}}/{{block.slug}}">
+              <div class="channel-block-open">
+                <div class="channel-title-open">{{block.title}}</div>
+              </div>
+            </a>
+            {% endif %}
           {% else %}
+            <!--<a target="_blank" href="https://www.are.na/block/{{block.id}}">-->
+            <a target="_blank" href="{{block.source.url}}">
             <div style="padding-bottom: 10px;">{{block.title}}</div>
-          {% endif %}
-          {% if block.image %}
-            <img src="{{block.image.display.url}}">
-          {% endif %}
-          {% if block.content %}
-            <div>{{block.content}}</div>
-          {% endif %}
-        </a>
+        {% endif %}
+        {% if block.image %}
+          <img style="vertical-align: top;" src="{{block.image.display.url}}">
+        {% endif %}
+        {% if block.content %}
+          <div>{{block.content}}</div>
+        {% endif %}
+            </a>
       </li>
     {% endfor %}
   </div>
