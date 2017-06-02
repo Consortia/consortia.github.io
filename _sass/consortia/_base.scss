@@ -90,8 +90,7 @@ img {
   padding-bottom: $spacing-unit;
 
   @media (max-width: 425px) {
-    padding-top: 0;
-    padding-bottom: 0;
+    display: none;
   }
 }
 
