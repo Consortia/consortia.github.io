@@ -1,4 +1,4 @@
-<div class="arena-content-feed">
+<ul class="arena-content-feed">
   {% for block in site.data[page.channel].contents %}
     <li style="padding-bottom: 15px; margin-top: 0px; list-style:none;">
       <a target="_blank" href="https://www.are.na/{{block.user.slug}}/{{block.slug}}">
@@ -36,4 +36,4 @@
       </a>
     </li>
   {% endfor %}
-</div>
+</ul>
