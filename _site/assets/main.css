@@ -193,6 +193,10 @@ pre {
   .icon > svg path {
     fill: #828282; }
 
+*::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none; }
+
 .row.no-gutters {
   margin-right: 0;
   margin-left: 0; }
@@ -260,6 +264,9 @@ video {
   left: 0;
   width: 100%;
   height: 100%; }
+
+.hide {
+  display: none; }
 
 .page-nav {
   margin-left: 15px;

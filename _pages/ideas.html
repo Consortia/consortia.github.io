@@ -40,7 +40,7 @@ channel: feed
             <article class="post-list">
             {% for post in site.categories.blog %}
               <li>
-              <a href="{{ post.url | relative_url }}">
+              <a href="{{ site.baseurl }}{{ post.url | relative_url }}">
                 <div class="col-xs-7" style="padding-left:0; margin-left:0;">
                   <img class="post-list" src="{{ site.baseurl }}/assets/images/{{ post.image }}">
                 </div>
