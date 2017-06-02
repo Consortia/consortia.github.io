@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "A Taxonomy of Branded Spaces"
-date:   2017-03-07 19:07:18 -0500
+date:   2017-06-07 19:07:18 -0500
 author: Leo Shaw
 categories: blog
 tags: [Premium Bodies]
