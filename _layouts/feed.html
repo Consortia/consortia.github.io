@@ -11,7 +11,7 @@ layout: default
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
-        <img src="{{ site.url }}/assets/images/{{ post.image }}">
+        <img src="{{ site.github.url }}/assets/images/{{ post.image }}">
         <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
         <span class="post-author">by {{ post.author }}</span>
         <span class="post-date"}>{{ post.date | date: "%b %-d, %Y" }}</span>
