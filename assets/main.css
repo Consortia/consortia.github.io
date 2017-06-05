@@ -551,16 +551,27 @@ a.header:hover {
 .post-title-large {
   font-family: "Atlas Grotesk Web";
   font-weight: 700;
-  font-size: 5vmin;
+  font-size: 5vw;
   line-height: 1.2;
   position: relative;
-  left: -50%;
-  top: 10%;
-  width: 150%;
+  margin-left: -150%;
+  margin-top: 60px;
+  width: 200%;
   z-index: 1; }
-  @media (max-width: 1280px) {
+  @media (max-width: 768px) {
     .post-title-large {
-      left: -75%; } }
+      margin-left: -200%;
+      width: 350%; } }
+  @media (max-width: 580px) {
+    .post-title-large {
+      margin-top: 30px;
+      margin-left: -300%;
+      width: 500%; } }
+  @media (max-width: 425px) {
+    .post-title-large {
+      margin-top: 15px;
+      margin-left: -300%;
+      width: 500%; } }
 
 .post-header img {
   margin-bottom: 15px;
@@ -582,12 +593,12 @@ a.header:hover {
 .post-meta {
   font-family: "Founders Grotesk Web";
   font-weight: 300;
-  font-size: 1.3vmax;
+  font-size: 1.3vw;
   line-height: 1.3;
   position: relative;
-  padding-left: 15px;
+  padding-left: 0px;
   z-index: 2;
-  top: 12.5%;
+  padding-top: 10px;
   white-space: nowrap;
   /*@media (max-width: 955px) {
     font-size: .9em;
