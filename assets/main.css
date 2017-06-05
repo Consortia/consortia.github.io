@@ -681,23 +681,9 @@ h2 {
 /**
   * Post References
 **/
-.arena-content {
-  margin-left: -30px; }
-  @media (max-width: 768px) {
-    .arena-content {
-      margin-left: 30px;
-      width: 100%; } }
-  @media (max-width: 425px) {
-    .arena-content {
-      margin-left: 30px;
-      width: 100%; } }
-
 .arena-content img {
   height: auto;
   width: 100%; }
-
-.arena-content-feed {
-  margin-left: -30px; }
 
 .notes {
   margin: 0;
