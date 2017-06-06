@@ -1,0 +1,539 @@
+<!--
+
+ ▄▀▄▄▄▄   ▄▀▀▄ ▄▄   ▄▀▀▄▀▀▀▄  ▄▀▀█▀▄   ▄▀▀▀▀▄  ▄▀▀▀█▀▀▄  ▄▀▀█▀▄    ▄▀▀▄ ▀▄  ▄▀▀█▄       ▄▀▀█▄▄   ▄▀▀█▄   ▄▀▀█▄▄   ▄▀▀█▄   ▄▀▀▀▀▄
+█ █    ▌ █  █   ▄▀ █   █   █ █   █  █ █ █   ▐ █    █  ▐ █   █  █  █  █ █ █ ▐ ▄▀ ▀▄     ▐ ▄▀   █ ▐ ▄▀ ▀▄ █ ▄▀   █ ▐ ▄▀ ▀▄ █    █
+▐ █      ▐  █▄▄▄█  ▐  █▀▀█▀  ▐   █  ▐    ▀▄   ▐   █     ▐   █  ▐  ▐  █  ▀█   █▄▄▄█       █▄▄▄▀    █▄▄▄█ ▐ █    █   █▄▄▄█ ▐    █
+  █         █   █   ▄▀    █      █    ▀▄   █     █          █       █   █   ▄▀   █       █   █   ▄▀   █   █    █  ▄▀   █     █
+ ▄▀▄▄▄▄▀   ▄▀  ▄▀  █     █    ▄▀▀▀▀▀▄  █▀▀▀    ▄▀        ▄▀▀▀▀▀▄  ▄▀   █   █   ▄▀       ▄▀▄▄▄▀  █   ▄▀   ▄▀▄▄▄▄▀ █   ▄▀    ▄▀▄▄▄▄▄▄▀
+█     ▐   █   █    ▐     ▐   █       █ ▐      █         █       █ █    ▐   ▐   ▐       █    ▐   ▐   ▐   █     ▐  ▐   ▐     █
+▐         ▐   ▐              ▐       ▐        ▐         ▐       ▐ ▐                    ▐                ▐                  ▐
+
+________________________________________________________________/\\\_________________________________________________________________
+_______________________________________________________________/\\\\\________________________________________________________________
+______________________________________________________________/\\\/\\\_______________________________________________________________
+_____________________________________________________________/\\\/\/\\\______________________________________________________________
+____________________________________________________________/\\\/__\/\\\_____________________________________________________________
+___________________________________________________________/\\\\\\\\\\\\\\\\_________________________________________________________
+___________________________________________________________\///////////\\\//_________________________________________________________
+______________________________________________________________________\/\\\__________________________________________________________
+______________________________________________________________________\///___________________________________________________________
+
+
+      ::::::::       ::::::::      ::::    :::       ::::::::       ::::::::      :::::::::   :::::::::::   :::::::::::         :::
+    :+:    :+:     :+:    :+:     :+:+:   :+:      :+:    :+:     :+:    :+:     :+:    :+:      :+:           :+:           :+: :+:
+   +:+            +:+    +:+     :+:+:+  +:+      +:+            +:+    +:+     +:+    +:+      +:+           +:+          +:+   +:+
+  +#+            +#+    +:+     +#+ +:+ +#+      +#++:++#++     +#+    +:+     +#++:++#:       +#+           +#+         +#++:++#++:
+ +#+            +#+    +#+     +#+  +#+#+#             +#+     +#+    +#+     +#+    +#+      +#+           +#+         +#+     +#+
+#+#    #+#     #+#    #+#     #+#   #+#+#      #+#    #+#     #+#    #+#     #+#    #+#      #+#           #+#         #+#     #+#
+########       ########      ###    ####       ########       ########      ###    ###      ###       ###########     ###     ###
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>A Taxonomy of Branded Spaces</title>
+  <meta name="description" content="Almost a decade has passed since trend forecasters foretold the death of the conventional retail store. In some arenas, their predictions of mobile commerce ...">
+
+  <script src="/assets/javascripts/jquery.min.js"></script>
+
+  <script src="/assets/javascripts/headerhider.js"></script>
+
+  <script src="/assets/javascripts/jquery.superslides.min.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="http://localhost:4000/blog/a-taxonomy-of-branded-spaces.html">
+  <link rel="alternate" type="application/rss+xml" title="Consortia" href="/feed.xml">
+
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+  <!--<script type="text/javascript">
+   $(function() {
+    var images = ['red.jpg', 'green.jpg', 'blue.jpg'];
+    $('#background').css({'background-image': 'url(assets/images/home/' + images[Math.floor(Math.random() * images.length)] + ')'});
+   });
+ </script>-->
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#ffffff">
+
+  
+
+  <!-- Begin Jekyll SEO tag v2.2.3 -->
+<title>A Taxonomy of Branded Spaces | Consortia</title>
+<meta property="og:title" content="A Taxonomy of Branded Spaces" />
+<meta name="author" content="Leo Shaw" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Almost a decade has passed since trend forecasters foretold the death of the conventional retail store. In some arenas, their predictions of mobile commerce and on-demand logistics have come true. In other ways, new tech is slowly percolating through existing frameworks for real estate, customers service, and logistics—even if the present still looks and feels a lot like the recent past." />
+<meta property="og:description" content="Almost a decade has passed since trend forecasters foretold the death of the conventional retail store. In some arenas, their predictions of mobile commerce and on-demand logistics have come true. In other ways, new tech is slowly percolating through existing frameworks for real estate, customers service, and logistics—even if the present still looks and feels a lot like the recent past." />
+<link rel="canonical" href="http://localhost:4000/blog/a-taxonomy-of-branded-spaces.html" />
+<meta property="og:url" content="http://localhost:4000/blog/a-taxonomy-of-branded-spaces.html" />
+<meta property="og:site_name" content="Consortia" />
+<meta property="og:image" content="http://localhost:4000/taxonomy-header.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-06-05T20:07:18-04:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@consortianet" />
+<meta name="twitter:creator" content="@Leo Shaw" />
+<meta property="article:publisher" content="https://www.facebook.com/consortianet/" />
+<script type="application/ld+json">
+{"@context":"http://schema.org","@type":"BlogPosting","headline":"A Taxonomy of Branded Spaces","author":{"@type":"Person","name":"Leo Shaw"},"image":"http://localhost:4000/taxonomy-header.jpg","datePublished":"2017-06-05T20:07:18-04:00","dateModified":"2017-06-05T20:07:18-04:00","description":"Almost a decade has passed since trend forecasters foretold the death of the conventional retail store. In some arenas, their predictions of mobile commerce and on-demand logistics have come true. In other ways, new tech is slowly percolating through existing frameworks for real estate, customers service, and logistics—even if the present still looks and feels a lot like the recent past.","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/consortia-logo.png"},"name":"Leo Shaw"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/a-taxonomy-of-branded-spaces.html"},"url":"http://localhost:4000/blog/a-taxonomy-of-branded-spaces.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+</head>
+
+
+  <body>
+
+          <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+<div class="container-fluid page-nav">
+
+  <div class="row no-gutters">
+    <div class="col-sm-12">
+      <header class="header-down">
+          <div class="row no-gutters">
+            <div class="col-xs-2 col-sm-4">
+              <a class="header-left" style="text-decoration: underline;" href="/ideas.html">Ideas</a>
+            </div>
+            <div class="col-xs-8 col-sm-4">
+              <a class="header-center" href="/">consortia</a>
+            </div>
+            <div class="col-xs-2 col-sm-4">
+              <a class="header-right" href="/office.html">Office</a>
+            </div>
+          </div>
+      </header>
+    </div>
+  </div>
+
+ <div class="row no-gutters">
+   <div class="col-xs-1">
+      <div class="position">
+         <div class="rotate">
+           <span class="page-heading">Post</span>
+         </div>
+       </div>
+   </div>
+
+   <div class="col-xs-11">
+     <div class="row no-gutters">
+       <div class="page-content">
+         <div class="col-xs-9" style="padding: 0;">
+           <!--<time class="post-meta-small" style="float:right;" datetime="2017-06-05T20:07:18-04:00" itemprop="datePublished">Jun 5, 2017</time>-->
+             
+              <div>
+                <img class="post-header" src="/assets/images/taxonomy-header.jpg">
+                
+                <div class="header-caption">Red Bull Music Academy Madrid</div>
+              </div>
+            </div>
+            <div class="col-xs-3">
+               <div class="post-title-large" itemprop="name headline">
+                 A Taxonomy of Branded Spaces
+               </div>
+                <!--<p class="post-meta" itemprop="author" itemscope itemtype="http://schema.org/Person">-->
+                <div class="post-meta" itemprop="name">by Leo Shaw
+                  <br>June 05, 2017
+                </div>
+               
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <div class="row no-gutters">
+    <div class="col-xs-1">
+       <div class="position">
+          <div class="rotate">
+            <span class="page-heading"></span>
+          </div>
+        </div>
+    </div>
+    <div class="col-xs-11 col-sm-7">
+      <div class="post-content">
+          <p>Almost a decade has passed since trend forecasters foretold the death of the conventional retail store. In some arenas, their predictions of mobile commerce and on-demand logistics have come true. In other ways, new tech is slowly percolating through existing frameworks for real estate, customers service, and logistics—even if the present still looks and feels a lot like the recent past.</p>
+
+<p>Large, slow-moving brands are working feverishly to support new purchasing habits. In cities with dense and affluent populations, platform businesses are nipping at their heels with digital platforms and physical stores. Hybrid sales models are now present in every upmarket product niche that bears opportunity for disruption, from electric toothbrushes to plastic rolling luggage.</p>
+
+<p>Even as the conventional retail interaction is abstracted and tweaked from a number of angles, the value of branded architectural space remains high. Companies of all kinds are spending to develop lucrative new retail environments and trying to create an “omnichannel” formula: one that attracts in-person shoppers with attractive environments that integrate with digital platforms for sales, logistics, and customer service.</p>
+
+<p>On its face, the “future of retail” seems like the kind of industry inside baseball that belongs in a suburban hotel ballroom. But branded spaces have obvious implications for almost everyone that uses the city.</p>
+
+<p>In a place like New York, for example, residential and public space are both so scarce that residents essentially rent time to socialize by going to bars, cafes, museums, et cetera. Historically, stores haven’t filled quite the same function. But as in-person transactions fade in importance, brands are pivoting towards selling one-of-a-kind experiences and aspirational backdrops for performing social identity.</p>
+
+<p>New strategies for branded space necessarily harness real estate, consumer spending, and cultural production to the mechanics and affordances of social media platforms. It’s worth thinking critically about these processes in order to better approach how both brands and consumers are renegotiating the public sphere.</p>
+
+<h2 id="new-shopping">New Shopping</h2>
+
+<p>Current conventional wisdom states that online retail does not reach far enough on its own — hence the migration by digital-first brands toward physical stores, pop-up shops, and other experiential marketing schemes. Clothing and accessories brands like Warby Parker and Bonobos are typical “post-digital” brands in this respect. After saturating their significant online customer bases, they pivoted toward physical formats that retained e-commerce integration as a key selling point.</p>
+
+<p>After years of operating temporary pop-ups, Everlane has also opened permanent stores in New York City and San Francisco in order to accommodate people who find it more convenient to shop locally, actually want to try clothing on first, or shop as a leisure activity.</p>
+
+<p>But the new physical retail doesn’t merely satisfy a customer preference for finding and purchasing products IRL. It transcends the retail store’s transactional purpose and opens up a new inflection in its historical role as a venue for entertainment, spectacle, and leisure.</p>
+
+<p>The post-digital retail space carefully appeals to consumers whose relationship with the world and other people is thoroughly mediated by digital images of aspirational offline experiences. The store is no longer a store, but a stage for moments that are easily repackaged into social content.</p>
+
+<p>This is why stores like Saturdays NYC serve coffee and sell matte-finish design magazines. It’s also why Everlane’s permanent retail spaces are called the “Soho Studio” and “SF Lab,” where purchases takes a backseat to feature clean white surfaces, blond wood furniture, and succulents. And why Warby Parker lavishes its stores with literary design details and bookish events that validate the brand’s nerd-cool image.</p>
+
+<p><img src="/assets/images/taxonomy-1.jpg" alt="Everlane's Shoe Park pop-up in SoHo was reportedly inspired by the flora of London's Barbican Centre." />
+<span class="caption">Everlane’s Shoe Park pop-up in SoHo was reportedly inspired by the flora of London’s Barbican Centre.</span></p>
+
+<p>The challenge facing both post-digital brands and consumers is the crisis of authenticity that arises when everyone emulates everyone else’s behavior. Good coffee, laughter among friends, and thoughtful design would ordinarily be signals of cultural authenticity, spontaneity, and genuine sociality—the very things that are so obviously lacking from online interactions.</p>
+
+<p>But consumers craving “authentic” experiences are also always on the lookout for their next good post — and they construct their digital persona by recycling the same tropes that populate their feed. As brands use those same trends to build stores and content strategies, they blunt what was once edgy and drain these symbols of meaning in the race to appeal to the broadest audience.</p>
+
+<p>The success of the now-”basic” look proves that it will continue to appeal to thousands and thousands of people in the short term. But on the other hand, the web is home to more (and more expressive) subcultures than ever. The true strength of a hybrid retail model lies in its heightened responsiveness to these quickly evolving cultural dialects — and the continuous opportunity to defamiliarize what customers take for granted.</p>
+
+<h2 id="incubating-value">Incubating Value</h2>
+
+<p>Brands that don’t sell products straight to consumers typically don’t operate permanent branded spaces. But digital-physical marketing strategies are scrambling the traditional marketing models for sponsorship, programming, and public relations.</p>
+
+<p>In this economy, every brand wants to be a platform. And every platform needs users. So brands that historically relied on sponsorships and events to build cultural cachet have turned to freelance creative economies and the incubator model.</p>
+
+<p>Incubators like Red Bull Studios in Chelsea and MINI’s A/D/O in Greenpoint  operationalize the cultural fetish for creativity by “platforming” groups of creative practitioners exposed to the precarity of New York real estate. For example, Red Bull Studios’ state-of-the-art recording facilities and built-in promotion machine are a godsend to emerging musicians, whose recordings and image in turn feed Red Bull’s well-calibrated content marketing campaigns.</p>
+
+<p><img src="/assets/images/taxonomy-2.jpg" alt="A/D/O, a 'design, retail and creative work hub' operated by MINI, opened in Greenpoint, Brooklyn at the beginning of 2017." />
+<span class="caption">A/D/O, a ‘design, retail and creative work hub’ operated by MINI, opened in Greenpoint, Brooklyn at the beginning of 2017.</span></p>
+
+<p>Although these strategies come standard out of the box, the partnerships brands build, the programming they implement and the projects they support have to speak for themselves. Red Bull is successful because it can buy authenticity in the form of curated lineups and access to beloved underground musicians.</p>
+
+<p>Similarly, A/D/O aims for a sophisticated demographic by finding partners like the Architectural League of New York and cutting-edge design studios to fill out its billing as a hub for design practice. But the balance of culture and commerce can be tricky. At Samsung’s massive 837 space in the Meatpacking District, a kitchen-sink layout approach puts VR installations and DJ booths next to awkward product dioramas and Genius bar-style service desks. There’s a palpable feeling of being bought off with awkward gestures toward upscale taste.</p>
+
+<p>A third option is getting out of the way almost entirely. Kickstarter and Snap, for example, launched excellent web publications this year—The Creative Independent and Real Life Magazine—exploring creativity and digital culture at the highest caliber.</p>
+
+<p>Every marketing strategy appeals to a different customer base, but most savvy customers know when their interests are being harvested for sponsored content. To reach people who crave honesty, perhaps the best brands can hope for is the tentative trust that comes from simply sponsoring good work and taking a bit of the credit.</p>
+
+<h2 id="just-add-culture">Just Add Culture</h2>
+
+<p>At the end of the day, the most craven spatial branding and interactive retail concepts will still be successful on some level. They will also be difficult to critique qualitatively because they do reach tons of people who value a familiar look and a space that treats experiences as boxes to check off.</p>
+
+<p>Take the new “Cadillac House” in the West Village, for instance. The result of a marketing shake-up at the luxury brand, it’s a car showroom that also features a public lounge, a café, an art gallery, and multimedia advertising displays. You’d think the creators thought culture came in powdered form.</p>
+
+<p><img src="/assets/images/taxonomy-3.jpg" alt="Cadillac House, designed by Gensler, aims to engage with culture in a substantive way while still prominently showcasing Cadillac products." />
+<span class="caption">Cadillac House, designed by Gensler, aims to engage with culture in a substantive way while still prominently showcasing Cadillac products.</span></p>
+
+<p>It’s hard to understand why anyone would want to drink a cortado right next to a new car, watch an informative film on Andy Warhol blatantly intercut with ad footage, or take anyone seriously who started a “public meeting space where innovators, creators, and the curious can find inspiration.” But the space is still open, and people visit.</p>
+
+<p>The ways that brands and corporations manipulate architectural space speak to the way they view their customers, and the way their customers see themselves relating to culture, technology, and platforms for expression. Even if they don’t throw terms like “retail concept” around in casual conversation, most people are attuned to the types of advertising, design, events, and social content that constitute the economy of aspirational branding in New York.</p>
+
+<p>As the line between physical and digital experiences blurs, and as cultural experiences bleed even further into commercial ones, these are currents that a growing group of institutions should be able to either effectively surf or swim against.</p>
+
+      </div>
+    </div>
+
+    <div class="col-xs-1">
+       <div class="position">
+          <div class="rotate">
+            <span class="page-heading">Notes</span>
+          </div>
+        </div>
+    </div>
+    <div class="col-xs-11 col-sm-3" style="padding-left: 0px; padding-right: 15px;">
+      
+        <ol class="notes">
+  <div class="arena-content">
+    
+      <li style="padding-bottom: 15px; margin-top: 0px;">
+          
+            <!--<a target="_blank" href="https://www.are.na/block/1015715">-->
+            <a target="_blank" href="http://fashionista.com/2016/12/away-travel-brand-fashion">
+            <div style="padding-bottom: 10px;">Why a Chic Suitcase Might be the Next 'It' Accessory</div>
+        
+        
+          <img style="vertical-align: top;" src="https://d2w9rnfcy7mm78.cloudfront.net/1015715/display_29d3e1e351e45b116b165dca1a4fb5e4">
+        
+        
+            </a>
+      </li>
+    
+      <li style="padding-bottom: 15px; margin-top: 0px;">
+          
+            <!--<a target="_blank" href="https://www.are.na/block/1025180">-->
+            <a target="_blank" href="">
+            <div style="padding-bottom: 10px;">Excerpt: Identity Theory in a Digital Age</div>
+        
+        
+          <img style="vertical-align: top;" src="https://d2w9rnfcy7mm78.cloudfront.net/1025180/display_0cefab82be4effc1e8af8d3a7d63bfbf.png">
+        
+        
+            </a>
+      </li>
+    
+      <li style="padding-bottom: 15px; margin-top: 0px;">
+          
+            <!--<a target="_blank" href="https://www.are.na/block/1025129">-->
+            <a target="_blank" href="https://images.businessoffashion.com/site/uploads/2015/08/BONOBOS_Andy-Dunn-Start-Up-Drugs-Photo-credit-alexander-thompson.jpg?crop=faces&fit=crop&ixlib=php-1.1.0&max-h=512&w=1024">
+            <div style="padding-bottom: 10px;">Warby Parker, Bonobos Have Big Plans for Physical Stores</div>
+        
+        
+          <img style="vertical-align: top;" src="https://d2w9rnfcy7mm78.cloudfront.net/1025129/display_b8f2b59d0c06e5c14a60fb210b3656fc">
+        
+        
+            </a>
+      </li>
+    
+      <li style="padding-bottom: 15px; margin-top: 0px;">
+          
+            <!--<a target="_blank" href="https://www.are.na/block/1015562">-->
+            <a target="_blank" href="">
+            <div style="padding-bottom: 10px;">Everlane Soho Studio</div>
+        
+        
+          <img style="vertical-align: top;" src="https://d2w9rnfcy7mm78.cloudfront.net/1015562/display_7038ae97d31ba908ba3573c5667ec447.png">
+        
+        
+            </a>
+      </li>
+    
+      <li style="padding-bottom: 15px; margin-top: 0px;">
+          
+            <!--<a target="_blank" href="https://www.are.na/block/1015560">-->
+            <a target="_blank" href="https://www.saturdaysnyc.com/__data/017743eb46c335012e35f584dddf3474.jpg">
+            <div style="padding-bottom: 10px;">Saturdays Surf NYC</div>
+        
+        
+          <img style="vertical-align: top;" src="https://d2w9rnfcy7mm78.cloudfront.net/1015560/display_02c5c715d0536d9e66ca3584b7019684.jpg">
+        
+        
+            </a>
+      </li>
+    
+      <li style="padding-bottom: 15px; margin-top: 0px;">
+          
+            <!--<a target="_blank" href="https://www.are.na/block/1025101">-->
+            <a target="_blank" href="https://hbr.org/2017/01/a-study-of-46000-shoppers-shows-that-omnichannel-retailing-works">
+            <div style="padding-bottom: 10px;">A Study of 46,000 Shoppers Shows That Omnichannel Retailing Works</div>
+        
+        
+          <img style="vertical-align: top;" src="https://d2w9rnfcy7mm78.cloudfront.net/1025101/display_58514f81792733bdf2c73ceade8d530e">
+        
+        
+            </a>
+      </li>
+    
+      <li style="padding-bottom: 15px; margin-top: 0px;">
+          
+            <!--<a target="_blank" href="https://www.are.na/block/942529">-->
+            <a target="_blank" href="https://static1.squarespace.com/static/530415bbe4b00959e151005d/5318d5d5e4b0fa5080aa5c09/5318d5dfe4b0fa5080aa5c62/1394136545449/saturdays-DSC_5075.jpg">
+            <div style="padding-bottom: 10px;">saturdays-DSC_5075.jpg</div>
+        
+        
+          <img style="vertical-align: top;" src="https://d2w9rnfcy7mm78.cloudfront.net/942529/display_11b4f9153f82424ec44fcf61ce4b3817.jpg">
+        
+        
+            </a>
+      </li>
+    
+      <li style="padding-bottom: 15px; margin-top: 0px;">
+          
+            <!--<a target="_blank" href="https://www.are.na/block/1015689">-->
+            <a target="_blank" href="https://twitter.com/ericschmerick/status/684786842315665412">
+            <div style="padding-bottom: 10px;">Eric-by-the-sea on Twitter</div>
+        
+        
+          <img style="vertical-align: top;" src="https://d2w9rnfcy7mm78.cloudfront.net/1015689/display_760912ecdb5a87859f860ebe04cb5b0f">
+        
+        
+            </a>
+      </li>
+    
+      <li style="padding-bottom: 15px; margin-top: 0px;">
+          
+            <!--<a target="_blank" href="https://www.are.na/block/540984">-->
+            <a target="_blank" href="http://partnersandspade.com/core/wp-content/uploads/2013/09/PS_WarbyParker_Retail_07.jpg">
+            <div style="padding-bottom: 10px;">Warby Parker Retail</div>
+        
+        
+          <img style="vertical-align: top;" src="https://d2w9rnfcy7mm78.cloudfront.net/540984/display_ec00241bbabeb7616dacc263c80e1166.jpg">
+        
+        
+            </a>
+      </li>
+    
+      <li style="padding-bottom: 15px; margin-top: 0px;">
+          
+            
+            <a target="_blank" href="https://www.are.na/drik-s/airspace">
+              <div class="channel-block-open">
+                <div class="channel-title-open">AIRSPACE</div>
+              </div>
+            </a>
+            
+          
+        
+        
+            </a>
+      </li>
+    
+      <li style="padding-bottom: 15px; margin-top: 0px;">
+          
+            <!--<a target="_blank" href="https://www.are.na/block/1015716">-->
+            <a target="_blank" href="https://a-d-o.com/">
+            <div style="padding-bottom: 10px;">A/D/O | Home</div>
+        
+        
+          <img style="vertical-align: top;" src="https://d2w9rnfcy7mm78.cloudfront.net/1015716/display_da06af3181cc53eff424efb980b879dd">
+        
+        
+            </a>
+      </li>
+    
+      <li style="padding-bottom: 15px; margin-top: 0px;">
+          
+            <!--<a target="_blank" href="https://www.are.na/block/1025205">-->
+            <a target="_blank" href="http://www.redbullstudios.com/newyork/studio">
+            <div style="padding-bottom: 10px;">Red Bull Studios New York</div>
+        
+        
+          <img style="vertical-align: top;" src="https://d2w9rnfcy7mm78.cloudfront.net/1025205/display_dbe5c91521ab1d9594934004600d5f89">
+        
+        
+            </a>
+      </li>
+    
+      <li style="padding-bottom: 15px; margin-top: 0px;">
+          
+            <!--<a target="_blank" href="https://www.are.na/block/512650">-->
+            <a target="_blank" href="http://www.redbullmusicacademy.com/lectures/stephen-o-malley">
+            <div style="padding-bottom: 10px;">Stephen O'Malley | Red Bull Music Academy</div>
+        
+        
+          <img style="vertical-align: top;" src="https://d2w9rnfcy7mm78.cloudfront.net/512650/display_deddf2e664d929719949605d2d5ef074">
+        
+        
+            </a>
+      </li>
+    
+      <li style="padding-bottom: 15px; margin-top: 0px;">
+          
+            <!--<a target="_blank" href="https://www.are.na/block/553424">-->
+            <a target="_blank" href="http://www.theverge.com/2016/2/23/11099014/samsung-837-nyc-walkthrough">
+            <div style="padding-bottom: 10px;">Samsung 837 "brand experience"</div>
+        
+        
+          <img style="vertical-align: top;" src="https://d2w9rnfcy7mm78.cloudfront.net/553424/display_7d3b0b0bd6b1fdf47927720f7eb08f5b.jpg">
+        
+        
+            </a>
+      </li>
+    
+      <li style="padding-bottom: 15px; margin-top: 0px;">
+          
+            <!--<a target="_blank" href="https://www.are.na/block/874323">-->
+            <a target="_blank" href="https://thecreativeindependent.com/">
+            <div style="padding-bottom: 10px;">The Creative Independent</div>
+        
+        
+          <img style="vertical-align: top;" src="https://d2w9rnfcy7mm78.cloudfront.net/874323/display_2f449b3fc59563493430918f7672af68">
+        
+        
+            </a>
+      </li>
+    
+      <li style="padding-bottom: 15px; margin-top: 0px;">
+          
+            <!--<a target="_blank" href="https://www.are.na/block/937770">-->
+            <a target="_blank" href="http://reallifemag.com/">
+            <div style="padding-bottom: 10px;">Real Life</div>
+        
+        
+          <img style="vertical-align: top;" src="https://d2w9rnfcy7mm78.cloudfront.net/937770/display_20691244984ef42c5e8287842e86d7a3">
+        
+        
+            </a>
+      </li>
+    
+      <li style="padding-bottom: 15px; margin-top: 0px;">
+          
+            <!--<a target="_blank" href="https://www.are.na/block/1015718">-->
+            <a target="_blank" href="http://www.cadillac.com/world-of-cadillac/cadillac-house.html">
+            <div style="padding-bottom: 10px;">Cadillac House - New York City Gallery &amp; Café | Cadillac</div>
+        
+        
+          <img style="vertical-align: top;" src="https://d2w9rnfcy7mm78.cloudfront.net/1015718/display_071cebdad607860dbcd7d25981476e3c">
+        
+        
+            </a>
+      </li>
+    
+  </div>
+</ol>
+
+      
+    </div>
+  </div>
+
+
+ <div class="row no-gutters">
+    <div class="col-xs-1">
+       <div class="position">
+          <div class="rotate">
+            <span class="page-heading">Related</span>
+          </div>
+        </div>
+    </div>
+    <div class="col-sm-11">
+      <div class="page-content">
+        
+
+
+
+  
+  
+
+  
+
+  
+
+
+  
+  
+
+  
+
+  
+  <div class="related-container">
+    <a href="/blog/on-consortia.html">
+      <img style="width: 100%; height: auto;" src="/assets/images/worldgame.jpg">
+      <div class="related-title">Consulting at the End of the World</div>
+      <div class="related-meta">by Christina Badal
+      <br>June 05, 2017</div>
+    </a>
+  </div>
+    
+    
+  
+
+
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</article>
+
+
+
+  </body>
+
+
+</html>
