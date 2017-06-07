@@ -148,7 +148,7 @@ a {
     color: black; }
 
 a:-webkit-any-link {
-  text-decoration: none; }
+  text-decoration: none !important; }
 
 /**
  * Blockquotes
@@ -694,6 +694,9 @@ h2 {
 .arena-content img {
   height: auto;
   width: 100%; }
+
+a.arena-content-feed {
+  text-decoration: none !important; }
 
 .notes {
   margin: 0;
