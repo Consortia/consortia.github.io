@@ -83,7 +83,8 @@ img {
 .header-caption {
   font-family: "Founders Grotesk Web";
   font-style: 300;
-  font-size: 0.7em;
+  font-size: 0.65em;
+  line-height: 1.2;
   color: #828282;
   padding-bottom: 30px; }
   @media (max-width: 955px) {
@@ -130,9 +131,9 @@ h1, h2, h3, h4, h5, h6 {
  */
 a {
   color: #000;
-  text-decoration: none; }
+  text-decoration: underline; }
   a:hover {
-    text-decoration: none !important;
+    text-decoration: underline;
     cursor: pointer;
     color: black; }
   a:focus {
@@ -147,7 +148,7 @@ a {
     cursor: pointer;
     color: black; }
 
-a:-webkit-any-link {
+a.favicon {
   text-decoration: none !important; }
 
 /**
@@ -227,14 +228,6 @@ pre {
 
 .row > div[class*="col-"] > .row > div[class*="col-"] {
   padding: 0; }
-
-/**
-  * MailChimp embed
-  */
-
-#mc_embed_signup form {
-  padding: 10px 0 10px 0% !important;
-}
 
 /**
  * Home Page
@@ -323,6 +316,9 @@ header {
     .header-center {
       font-size: 1em; } }
 
+a.header-center {
+  text-decoration: none !important; }
+
 .header-left {
   font-family: "Founders Grotesk Web";
   font-weight: 300;
@@ -338,6 +334,24 @@ header {
   @media (max-width: 768px) {
     .header-left {
       font-size: 1em; } }
+
+a.header-left {
+  text-decoration: none; }
+  a.header-left:hover {
+    text-decoration: underline !important;
+    cursor: pointer;
+    color: black; }
+  a.header-left:focus {
+    text-decoration: underline;
+    cursor: pointer; }
+  a.header-left:active {
+    text-decoration: underline !important;
+    cursor: pointer;
+    color: black; }
+  a.header-left:visited {
+    text-decoration: underline !important;
+    cursor: pointer;
+    color: black; }
 
 .header-right {
   font-family: "Founders Grotesk Web";
@@ -355,10 +369,23 @@ header {
     .header-right {
       font-size: 1em; } }
 
-a.header:hover {
-  color: black;
-  text-decoration: none;
-  cursor: pointer; }
+a.header-right {
+  text-decoration: none; }
+  a.header-right:hover {
+    text-decoration: underline !important;
+    cursor: pointer;
+    color: black; }
+  a.header-right:focus {
+    text-decoration: underline;
+    cursor: pointer; }
+  a.header-right:active {
+    text-decoration: underline !important;
+    cursor: pointer;
+    color: black; }
+  a.header-right:visited {
+    text-decoration: underline !important;
+    cursor: pointer;
+    color: black; }
 
 /**
  * Page content
@@ -471,7 +498,7 @@ a.header:hover {
 .post-meta-small {
   font-family: "Founders Grotesk Web";
   font-weight: 300;
-  font-size: .75em;
+  font-size: .65em;
   display: flex;
   padding-top: 7.5px;
   /*@media (max-width: 400px) {
@@ -492,17 +519,17 @@ a.header:hover {
   font-family: "Atlas Grotesk Web";
   font-weight: 700;
   display: inline-flex;
-  margin-left: -100%;
-  font-size: 2.3em;
+  margin-left: -125%;
+  font-size: 2em;
   line-height: 1.2;
   margin-top: 30px;
-  width: 200%;
+  width: 225%;
   z-index: 1; }
   @media (max-width: 1280px) {
     .post-link {
-      font-size: 1.8em;
-      margin-left: -100%;
-      width: 200%; } }
+      font-size: 1.5em;
+      margin-left: -125%;
+      width: 225%; } }
   @media (max-width: 768px) {
     .post-link {
       font-size: 2.3em; } }
@@ -562,17 +589,24 @@ a.header:hover {
 .post-title-large {
   font-family: "Atlas Grotesk Web";
   font-weight: 700;
-  font-size: 5vw;
+  font-size: 4.5vw;
   line-height: 1.2;
   position: relative;
-  margin-left: -150%;
+  margin-left: -200%;
   margin-top: 60px;
-  width: 200%;
+  width: 250%;
   z-index: 1; }
+  @media (max-width: 1300px) {
+    .post-title-large {
+      margin-left: -275%;
+      width: 375%; } }
+  @media (max-width: 900px) {
+    .post-title-large {
+      margin-top: 45px; } }
   @media (max-width: 768px) {
     .post-title-large {
-      margin-left: -200%;
-      width: 350%; } }
+      margin-left: -275%;
+      width: 375%; } }
   @media (max-width: 580px) {
     .post-title-large {
       margin-top: 30px;
@@ -588,6 +622,8 @@ a.header:hover {
   margin-bottom: 15px;
   min-height: 150px;
   width: 100%;
+  padding: 0;
+  overflow-x: auto;
   object-fit: cover;
   z-index: 0;
   margin-bottom: 0px;
@@ -609,11 +645,17 @@ a.header:hover {
   position: relative;
   padding-left: 0px;
   z-index: 2;
+  margin-left: -50%;
   padding-top: 7.5px;
   white-space: nowrap; }
+  @media (max-width: 1300px) {
+    .post-meta {
+      font-size: .8em;
+      margin-left: -75%; } }
   @media (max-width: 955px) {
     .post-meta {
-      font-size: .8em; } }
+      font-size: .8em;
+      margin-left: -100%; } }
   @media (max-width: 768px) {
     .post-meta {
       font-size: .7em;
@@ -676,6 +718,28 @@ h2 {
       min-height: 350px; } }
   @media (max-width: 425px) {
     .post-content img {
+      max-height: 250px;
+      min-height: 150px;
+      padding-top: 15px; } }
+
+iframe {
+  padding-top: 60px;
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+  @media (max-width: 955px) {
+    iframe {
+      max-height: 500px;
+      min-height: 350px; } }
+  @media (max-width: 768px) {
+    iframe {
+      max-height: 500px;
+      min-height: 350px; } }
+  @media (max-width: 425px) {
+    iframe {
       max-height: 250px;
       min-height: 150px;
       padding-top: 15px; } }
