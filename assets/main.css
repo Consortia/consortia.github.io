@@ -56,7 +56,7 @@ img {
 .caption {
   font-family: "Founders Grotesk Web";
   font-weight: 300;
-  font-size: 0.7em;
+  font-size: 0.75em;
   line-height: 1.3;
   color: #828282;
   width: 100%;
@@ -65,35 +65,23 @@ img {
   margin-left: auto;
   margin-right: auto;
   padding-top: 7.5px;
-  padding-bottom: 60px; }
+  padding-bottom: 30px; }
   @media (max-width: 955px) {
     .caption {
       font-size: 0.6em;
       line-height: 1.2; } }
-  @media (max-width: 600px) {
-    .caption {
-      font-size: 0.5em; } }
-  @media (max-width: 525px) {
-    .caption {
-      display: none; } }
-  @media (max-width: 425px) {
-    .caption {
-      padding-bottom: 15px; } }
 
 .header-caption {
   font-family: "Founders Grotesk Web";
   font-style: 300;
-  font-size: 0.65em;
-  line-height: 1.2;
+  font-size: 0.75em;
+  line-height: 1.3;
   color: #828282;
   padding-bottom: 30px; }
   @media (max-width: 955px) {
     .header-caption {
       font-size: 0.6em;
       line-height: 1.2; } }
-  @media (max-width: 600px) {
-    .header-caption {
-      font-size: 0.5em; } }
   @media (max-width: 525px) {
     .header-caption {
       display: none; } }
@@ -485,6 +473,9 @@ a.header-right {
   width: 100%;
   object-fit: cover;
   z-index: 0;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  /* For IE8 and earlier */
   /*@media (max-width: 768px) {
     min-height: 200px;
     max-height: 300px;
@@ -494,6 +485,12 @@ a.header-right {
     min-height: 150px;
     max-height: 200px;
   }*/ }
+
+.post-list img:hover {
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+  /* For IE8 and earlier */
+  z-index: 555555 !important; }
 
 .post-meta-small {
   font-family: "Founders Grotesk Web";
@@ -512,7 +509,7 @@ a.header-right {
       font-size: .75em; } }
   @media (max-width: 425px) {
     .post-meta-small {
-      font-size: .5em;
+      font-size: .65em;
       padding-top: 5px; } }
 
 .post-link {
@@ -535,7 +532,8 @@ a.header-right {
       font-size: 2.3em; } }
   @media (max-width: 425px) {
     .post-link {
-      font-size: 1.8em; } }
+      margin-left: -150%;
+      font-size: 1.6em; } }
 
 /**
 .project-link {
@@ -581,52 +579,34 @@ a.header-right {
 /**
  * Posts
  */
+@media (max-width: 768px) {
+  .post-header-container {
+    padding-left: 15px;
+    margin-right: -15px; } }
+
 .post-header {
-  display: flex;
   margin-bottom: 15px;
-  overflow: hidden; }
+  width: 100%;
+  height: 100%; }
 
 .post-title-large {
   font-family: "Atlas Grotesk Web";
   font-weight: 700;
-  font-size: 4.5vw;
+  font-size: 5vw;
   line-height: 1.2;
   position: relative;
-  margin-left: -200%;
-  margin-top: 60px;
-  width: 250%;
   z-index: 1; }
-  @media (max-width: 1300px) {
-    .post-title-large {
-      margin-left: -275%;
-      width: 375%; } }
-  @media (max-width: 900px) {
-    .post-title-large {
-      margin-top: 45px; } }
-  @media (max-width: 768px) {
-    .post-title-large {
-      margin-left: -275%;
-      width: 375%; } }
-  @media (max-width: 580px) {
-    .post-title-large {
-      margin-top: 30px;
-      margin-left: -300%;
-      width: 500%; } }
-  @media (max-width: 425px) {
-    .post-title-large {
-      margin-top: 15px;
-      margin-left: -300%;
-      width: 500%; } }
 
 .post-header img {
   margin-bottom: 15px;
-  min-height: 150px;
-  width: 100%;
+  min-height: 250px;
   padding: 0;
-  overflow-x: auto;
   object-fit: cover;
   z-index: 0;
-  margin-bottom: 0px;
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   /*@media (max-width: 955px) {
     max-height: 500px;
     min-height: 400px;
@@ -640,30 +620,18 @@ a.header-right {
 .post-meta {
   font-family: "Founders Grotesk Web";
   font-weight: 300;
-  font-size: .9em;
+  font-size: 1em;
   line-height: 1.3;
   position: relative;
   padding-left: 0px;
+  padding-bottom: 30px;
   z-index: 2;
-  margin-left: -50%;
+  display: flex;
   padding-top: 7.5px;
   white-space: nowrap; }
-  @media (max-width: 1300px) {
-    .post-meta {
-      font-size: .8em;
-      margin-left: -75%; } }
-  @media (max-width: 955px) {
-    .post-meta {
-      font-size: .8em;
-      margin-left: -100%; } }
-  @media (max-width: 768px) {
-    .post-meta {
-      font-size: .7em;
-      padding-top: 10px; } }
   @media (max-width: 425px) {
     .post-meta {
-      font-size: .6em;
-      padding-top: 5px; } }
+      font-size: .75em; } }
 
 .post-content {
   font-family: "Atlas Grotesk Web";
@@ -681,7 +649,8 @@ a.header-right {
       margin-right: -15px; } }
   @media (max-width: 425px) {
     .post-content {
-      font-size: .8em; } }
+      font-size: .8em;
+      line-height: 1.6; } }
 
 h2 {
   font-family: "Atlas Grotesk Web";
@@ -701,48 +670,52 @@ h2 {
       font-size: .8em; } }
 
 .post-content img {
-  padding-top: 60px;
-  height: 500px;
+  padding-top: 30px;
+  min-height: 250px;
   width: 100%;
   object-fit: cover;
   display: block;
   margin-left: auto;
-  margin-right: auto; }
-  @media (max-width: 955px) {
-    .post-content img {
-      max-height: 500px;
-      min-height: 350px; } }
+  margin-right: auto;
+  /**@media (max-width: 955px) {
+    max-height: 500px;
+    min-height: 350px;
+  }
+
   @media (max-width: 768px) {
-    .post-content img {
-      max-height: 500px;
-      min-height: 350px; } }
+    padding-top: $spacing-unit;
+    max-height: 300px;
+    min-height: 250px;
+  }
+
   @media (max-width: 425px) {
-    .post-content img {
-      max-height: 250px;
-      min-height: 150px;
-      padding-top: 15px; } }
+    max-height: 250px;
+    min-height: 150px;
+    padding-top: $spacing-unit / 2;
+  }**/ }
 
 iframe {
-  padding-top: 60px;
-  height: 500px;
+  padding-top: 30px;
   width: 100%;
   object-fit: cover;
   display: block;
   margin-left: auto;
-  margin-right: auto; }
-  @media (max-width: 955px) {
-    iframe {
-      max-height: 500px;
-      min-height: 350px; } }
+  margin-right: auto;
+  /**@media (max-width: 955px) {
+    max-height: 500px;
+    min-height: 350px;
+  }
+
   @media (max-width: 768px) {
-    iframe {
-      max-height: 500px;
-      min-height: 350px; } }
+    max-height: 500px;
+    min-height: 350px;
+  }
+
   @media (max-width: 425px) {
-    iframe {
-      max-height: 250px;
-      min-height: 150px;
-      padding-top: 15px; } }
+    max-height: 250px;
+    min-height: 150px;
+    padding-top: $spacing-unit / 2;
+  }**/ }
 
 /**
   * Post References
@@ -750,6 +723,9 @@ iframe {
 .arena-content img {
   height: auto;
   width: 100%; }
+
+a.arena-content {
+  text-decoration: none !important; }
 
 a.arena-content-feed {
   text-decoration: none !important; }
@@ -782,7 +758,7 @@ a.arena-content-feed {
 .channel-block-closed {
   border-style: solid;
   border-width: 1px;
-  border-color: #17ac10;
+  border-color: #4b3d67;
   width: 100%;
   display: flex;
   align-items: center;
@@ -844,6 +820,11 @@ a.arena-content-feed {
   margin: auto;
   text-align: center;
   padding: 15px; }
+
+.channel-title-closed {
+  color: #4b3d67;
+  margin: auto;
+  text-align: center; }
 
 .channel-description-closed {
   padding-top: 15px;
