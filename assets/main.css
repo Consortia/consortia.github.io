@@ -375,6 +375,60 @@ a.header-right {
     cursor: pointer;
     color: black; }
 
+footer {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  z-index: 4;
+  transition: bottom 0.2s ease-in-out; }
+
+.footer-down {
+  bottom: -60px; }
+
+.footer-center {
+  font-family: "Founders Grotesk Web";
+  font-weight: 300;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 0.05;
+  justify-content: center;
+  display: flex;
+  overflow: hidden; }
+  @media (max-width: 992px) {
+    .footer-center {
+      font-size: 0.75em; } }
+  @media (max-width: 768px) {
+    .footer-center {
+      font-size: 0.5em; } }
+
+a.footer-center {
+  text-decoration: none !important; }
+
+.button {
+  background-color: black !important;
+  height: 20px !important;
+  line-height: 20px !important;
+  font-size: 1em !important;
+  margin: none !important;
+  padding: none !important;
+  border: 1px solid #000 !important; }
+
+.email {
+  height: 20px !important;
+  line-height: 20px !important;
+  font-size: 1em !important;
+  font-family: "Founders Grotesk Web" !important;
+  margin: none !important;
+  padding: none !important;
+  border: 1px solid #000 !important;
+  color: #000 !important;
+  width: 250px !important; }
+
+input:focus {
+  outline: none !important; }
+
 /**
  * Page content
  */
