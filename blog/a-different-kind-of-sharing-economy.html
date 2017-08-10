@@ -1,0 +1,661 @@
+<!--
+
+ ▄▀▄▄▄▄   ▄▀▀▄ ▄▄   ▄▀▀▄▀▀▀▄  ▄▀▀█▀▄   ▄▀▀▀▀▄  ▄▀▀▀█▀▀▄  ▄▀▀█▀▄    ▄▀▀▄ ▀▄  ▄▀▀█▄       ▄▀▀█▄▄   ▄▀▀█▄   ▄▀▀█▄▄   ▄▀▀█▄   ▄▀▀▀▀▄
+█ █    ▌ █  █   ▄▀ █   █   █ █   █  █ █ █   ▐ █    █  ▐ █   █  █  █  █ █ █ ▐ ▄▀ ▀▄     ▐ ▄▀   █ ▐ ▄▀ ▀▄ █ ▄▀   █ ▐ ▄▀ ▀▄ █    █
+▐ █      ▐  █▄▄▄█  ▐  █▀▀█▀  ▐   █  ▐    ▀▄   ▐   █     ▐   █  ▐  ▐  █  ▀█   █▄▄▄█       █▄▄▄▀    █▄▄▄█ ▐ █    █   █▄▄▄█ ▐    █
+  █         █   █   ▄▀    █      █    ▀▄   █     █          █       █   █   ▄▀   █       █   █   ▄▀   █   █    █  ▄▀   █     █
+ ▄▀▄▄▄▄▀   ▄▀  ▄▀  █     █    ▄▀▀▀▀▀▄  █▀▀▀    ▄▀        ▄▀▀▀▀▀▄  ▄▀   █   █   ▄▀       ▄▀▄▄▄▀  █   ▄▀   ▄▀▄▄▄▄▀ █   ▄▀    ▄▀▄▄▄▄▄▄▀
+█     ▐   █   █    ▐     ▐   █       █ ▐      █         █       █ █    ▐   ▐   ▐       █    ▐   ▐   ▐   █     ▐  ▐   ▐     █
+▐         ▐   ▐              ▐       ▐        ▐         ▐       ▐ ▐                    ▐                ▐                  ▐
+
+________________________________________________________________/\\\_________________________________________________________________
+_______________________________________________________________/\\\\\________________________________________________________________
+______________________________________________________________/\\\/\\\_______________________________________________________________
+_____________________________________________________________/\\\/\/\\\______________________________________________________________
+____________________________________________________________/\\\/__\/\\\_____________________________________________________________
+___________________________________________________________/\\\\\\\\\\\\\\\\_________________________________________________________
+___________________________________________________________\///////////\\\//_________________________________________________________
+______________________________________________________________________\/\\\__________________________________________________________
+______________________________________________________________________\///___________________________________________________________
+
+
+      ::::::::       ::::::::      ::::    :::       ::::::::       ::::::::      :::::::::   :::::::::::   :::::::::::         :::
+    :+:    :+:     :+:    :+:     :+:+:   :+:      :+:    :+:     :+:    :+:     :+:    :+:      :+:           :+:           :+: :+:
+   +:+            +:+    +:+     :+:+:+  +:+      +:+            +:+    +:+     +:+    +:+      +:+           +:+          +:+   +:+
+  +#+            +#+    +:+     +#+ +:+ +#+      +#++:++#++     +#+    +:+     +#++:++#:       +#+           +#+         +#++:++#++:
+ +#+            +#+    +#+     +#+  +#+#+#             +#+     +#+    +#+     +#+    +#+      +#+           +#+         +#+     +#+
+#+#    #+#     #+#    #+#     #+#   #+#+#      #+#    #+#     #+#    #+#     #+#    #+#      #+#           #+#         #+#     #+#
+########       ########      ###    ####       ########       ########      ###    ###      ###       ###########     ###     ###
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>A Different Kind of Sharing Economy: an Interview with Jack Self</title>
+  <meta name="description" content="Jack Self is the principal of REAL Foundation, a London-based architectural practice and cultural institute participating in the 2017 Chicago Architecture Bi...">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@consortianet">
+  <meta name="twitter:title" content="A Different Kind of Sharing Economy: an Interview with Jack Self">
+
+  
+    <meta name="twitter:description"
+      content="Jack Self is the principal of REAL Foundation, a London-based architectural practice and cultural institute participating in the 2017 Chicago Architecture Biennial. This conversation was conducted ...">
+  
+
+  
+    <meta name="twitter:image"
+      content="http://localhost:4000/assets/images/jack-self-header.jpg">
+  
+
+
+  <script src="/assets/javascripts/jquery.min.js"></script>
+
+  <script src="/assets/javascripts/headerhider.js"></script>
+
+  <script src="/assets/javascripts/footerhider.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="http://localhost:4000/blog/a-different-kind-of-sharing-economy.html">
+  <link rel="alternate" type="application/rss+xml" title="Consortia" href="/feed.xml">
+
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+  <!--<script type="text/javascript">
+   $(function() {
+    var images = ['red.jpg', 'green.jpg', 'blue.jpg'];
+    $('#background').css({'background-image': 'url(assets/images/home/' + images[Math.floor(Math.random() * images.length)] + ')'});
+   });
+ </script>-->
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#ffffff">
+
+  
+
+  <!-- Begin Jekyll SEO tag v2.2.3 -->
+<title>A Different Kind of Sharing Economy: an Interview with Jack Self | Consortia</title>
+<meta property="og:title" content="A Different Kind of Sharing Economy: an Interview with Jack Self" />
+<meta name="author" content="Christina Badal & Leo Shaw" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Jack Self is the principal of REAL Foundation, a London-based architectural practice and cultural institute participating in the 2017 Chicago Architecture Biennial. This conversation was conducted for the Chicago Architecture Biennial blog, edited by Consortia." />
+<meta property="og:description" content="Jack Self is the principal of REAL Foundation, a London-based architectural practice and cultural institute participating in the 2017 Chicago Architecture Biennial. This conversation was conducted for the Chicago Architecture Biennial blog, edited by Consortia." />
+<link rel="canonical" href="http://localhost:4000/blog/a-different-kind-of-sharing-economy.html" />
+<meta property="og:url" content="http://localhost:4000/blog/a-different-kind-of-sharing-economy.html" />
+<meta property="og:site_name" content="Consortia" />
+<meta property="og:image" content="http://localhost:4000/jack-self-header.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-07-14T11:07:18-04:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@consortianet" />
+<meta name="twitter:creator" content="@Christina Badal & Leo Shaw" />
+<meta property="article:publisher" content="https://www.facebook.com/consortianet/" />
+<script type="application/ld+json">
+{"@context":"http://schema.org","@type":"BlogPosting","headline":"A Different Kind of Sharing Economy: an Interview with Jack Self","author":{"@type":"Person","name":"Christina Badal & Leo Shaw"},"image":"http://localhost:4000/jack-self-header.jpg","datePublished":"2017-07-14T11:07:18-04:00","dateModified":"2017-07-14T11:07:18-04:00","description":"Jack Self is the principal of REAL Foundation, a London-based architectural practice and cultural institute participating in the 2017 Chicago Architecture Biennial. This conversation was conducted for the Chicago Architecture Biennial blog, edited by Consortia.","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/consortia-logo.png"},"name":"Christina Badal & Leo Shaw"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/a-different-kind-of-sharing-economy.html"},"url":"http://localhost:4000/blog/a-different-kind-of-sharing-economy.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+</head>
+
+
+  <body>
+
+          <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+<div class="container-fluid page-nav">
+
+  <div class="row no-gutters">
+    <div class="col-sm-12">
+      <header class="header-down">
+          <div class="row no-gutters">
+            <div class="col-xs-2 col-sm-4">
+              <a class="header-left" style="text-decoration: underline;" href="/ideas.html">Ideas</a>
+            </div>
+            <div class="col-xs-8 col-sm-4">
+              <a class="header-center" href="/">consortia</a>
+            </div>
+            <div class="col-xs-2 col-sm-4">
+              <a class="header-right" href="/office.html">Office</a>
+            </div>
+          </div>
+      </header>
+    </div>
+  </div>
+
+ <div class="row no-gutters">
+   <div class="col-xs-1">
+      <div class="position">
+         <div class="rotate">
+           <span class="page-heading">Post</span>
+         </div>
+       </div>
+   </div>
+   <div class="col-xs-11 col-sm-3">
+     <div class="post-content" style="padding-top: 0 !important;">
+       <div class="post-title-large" itemprop="name headline">
+         A Different Kind of Sharing Economy: an Interview with Jack Self
+       </div>
+        <!--<p class="post-meta" itemprop="author" itemscope itemtype="http://schema.org/Person">-->
+        <div class="post-meta" itemprop="name">by Christina Badal & Leo Shaw
+          <br>July 14, 2017
+        </div>
+       
+     </div>
+   </div>
+   <div class="col-xs-11 col-sm-7">
+     <!--<div class="row no-gutters">-->
+       <div class="post-content">
+         <!--<div class="col-xs-9" style="padding: 0;">-->
+           <!--<time class="post-meta-small" style="float:right;" datetime="2017-07-14T11:07:18-04:00" itemprop="datePublished">Jul 14, 2017</time>-->
+             
+              <div>
+                <img class="post-header" style="padding-top:0px; min-height: 150px;" src="/assets/images/jack-self-header.jpg">
+                
+                <div class="header-caption">Glass House, Jack Self's latest project in his Derivative Architecture series, is an experiment in repurposing the typical incentives that power the real estate market.</div>
+              </div>
+            <!--</div>-->
+            <!--<div class="col-xs-3">-->
+
+            <!--</div>-->
+          </div>
+        <!--</div>-->
+      </div>
+      <div class="col-sm-1">
+         <div class="position">
+            <div class="rotate">
+              <span class="page-heading"></span>
+            </div>
+          </div>
+      </div>
+
+    </div>
+
+
+
+
+
+  <div class="row no-gutters">
+    <div class="col-xs-1">
+       <div class="position">
+          <div class="rotate">
+            <span class="page-heading"></span>
+          </div>
+        </div>
+    </div>
+    <div class="col-xs-11 col-sm-7">
+      <div class="post-content">
+          <p><em>Jack Self is the principal of <a href="http://real.foundation/">REAL Foundation</a>, a London-based architectural practice and cultural institute participating in the 2017 Chicago Architecture Biennial. This conversation was conducted for the <a href="http://chicagoarchitecturebiennial.org/blog">Chicago Architecture Biennial blog</a>, edited by Consortia.</em></p>
+
+<p><strong>Christina and Leo</strong>: We want to start by noting that REAL foundation, which stands for the Real Estate Architecture Laboratory, is not a typical design practice. You design spaces, but you also make books, exhibitions, a magazine, and tools for advocacy. Why?</p>
+
+<p><strong>Jack Self</strong>: The REAL foundation is an unusual model for an architectural firm. We’re a normal architectural practice, but we are governed by a very strict set of conditions that allow us to pursue certain political and economic ideologies. We see the social role of the architect, as well as the structure of the architectural firm, as a subject for design as much as buildings.</p>
+
+<p>We think that architecture is both material and immaterial. It’s a form of governing social power relations, class relations, gender, race, and other cultural relations through conditions of space. That means that you habitually end up being involved in business models, in institutional models, in systems of governance, and financial design, just as much as you are involved in the design of real buildings.</p>
+
+<p>We also have a particular interest in the domestic sphere at almost every scale, from the politics of a dining room table to the way in which housing is deployed at the national level. We take that as our focus trying to promote higher levels of wealth and spatial and civic equality. We are also really interested in the development of new models, new typologies, and new ways to talk about architecture.</p>
+
+<p><img src="/assets/images/jack-self-home-econ.jpg" alt="A publication accompanying the Home Economics exhibition re-writes the brief for contemporary living." />
+<span class="caption">A publication accompanying the Home Economics exhibition re-writes the brief for contemporary living.</span></p>
+
+<p><strong>Christina and Leo</strong>: Can you talk a little bit about how your project for the Chicago Architecture Biennial extends those interests?</p>
+
+<p><strong>Jack Self</strong>: The Chicago Biennial is a great venue to both push forward certain ideas for ourselves, and then to present them in a way in which they can be discussed, critiqued by our peers, and improved upon.</p>
+
+<p>Our project is a collectively owned housing block for London called the Glass House that explores living together as a spatial and a political question. It’s basically a co-sharing scheme, so there is no circulation space within the plan. All the rooms lead directly into each other, including the lift, the stair, and the elevator.</p>
+
+<p>The question of public and private is not so clear. You move through gradations of publicness and privateness, which I think is increasingly the way in which we experience the city. It’s no longer the case that you close your front door when you come home, and you are now in a private bubble. You’re still connected to a civic space in many ways.</p>
+
+<p>The project also relates to a historical precedent: the <a href="http://dash-journal.com/glasraum/">Glass Room</a> by Mies van der Rohe and <a href="https://www.moma.org/d/c/exhibition_catalogues/W1siZiIsIjMwMDE5OTQ0MyJdLFsicCIsImVuY292ZXIiLCJ3d3cubW9tYS5vcmcvY2FsZW5kYXIvZXhoaWJpdGlvbnMvMjc4IiwiaHR0cHM6Ly93d3cubW9tYS5vcmcvY2FsZW5kYXIvZXhoaWJpdGlvbnMvMjc4P2xvY2FsZT1lbiIsImkiXV0.pdf?sha=2a1aaea915211b8a">Lilly Reich</a>, which they made in 1927 for the Weissenhofsiedlung model town in Germany. In the Glass Room, the functions of the spaces are very loosely defined and there is no separate circulation. So not only is there no wasted space in the plan, but there’s also a fluidity that allowed different types of people to occupy each space in ways that spilled over from one to the next.</p>
+
+<p><strong>Christina and Leo</strong>: We’re also curious how you got interested in designing the systems around architecture, like contracts and financing models. Was it the fact of practicing in a place like London, where buildings are used as financial instruments as much as they are actually for housing or work?</p>
+
+<p><strong>Jack Self</strong>: Yes, I think it comes from the need to understand the power structures that exist around us and that we disagree with, so that we can strategically engage with them and attempt to alter them from within. Since London is one of the most neoliberal cities in the world, what are the basic qualities of a neoliberal market that can be hijacked or manipulated in order to produce a more equitable city?</p>
+
+<p><img src="/assets/images/jack-self-the-ingot.jpg" alt="The Ingot, a proposal by the REAL Foundation for a gold-plated tower sited next to London Bridge, and designed to house low-paid, precarious workers." />
+<span class="caption">The Ingot, a proposal by the REAL Foundation for a gold-plated tower sited next to London Bridge, and designed to house low-paid, precarious workers.</span></p>
+
+<p>The Glass House is actually sixth project in a series called <a href="http://www.jackself.com/content/Press/PDF/SELF_DerivativeArchitecture_RealEstates.pdf">“Derivative Architecture,”</a> which began in 2013 as an experiment in repurposing the typical incentives that power the real estate market. We started with a building called the Ingot, which wasn’t a building so much as it was a long-term financial algorithm designed create social housing in the most expensive parts of the city.</p>
+
+<p>The idea was to replace the standard 20-year mortgage with a term of 80 or 100 years, which would lower rent by distributing the cost of the building over a much longer timespan. It would also take the property out of the short term property market entirely and build up a high return on investment over time.</p>
+
+<p>From that base model, we then proposed a system in which residents individuals themselves could start to accrue equity in the building, so they might be able to buy shares, for example. This is why it’s called “Derivative Architecture.” Instead of owning property, you own a share of the property indirectly, which creates a stronger incentive for communal stewardship of a sustainable place to live.</p>
+
+<p>That, in a way, is the line of research which has led up to the Glass House.</p>
+
+<p><strong>Christina and Leo</strong>: It’s interesting that you’re basically repurposing the mechanisms of the real estate market against itself in order to actually slow down or mitigate the inherent pressures on architectural projects. It forces you to think on a much longer time scale than architects are usually allowed.</p>
+
+<p><strong>Jack Self</strong>: Right. I think it’s extremely important to be extremely idealistic in the views that you hold, but to be extremely pragmatic in the way in which you think they can be advanced in the world.</p>
+
+<p>In the case of the Chicago Biennial, one of the things that really interested me a lot about the curatorial direction is an acknowledgement of design’s relationship to history, but not in a way which was overly academic. It was in a way which is propositional, which is to say, “What is the relevance of history, and how can we make history contemporary, what can we learn from the past?”</p>
+
+<p>I find that interesting because I’m very interested in exploring alternative realities and change does take time. The idea of Make New History reminds us that design is constantly evolving, and there is no such thing as a “normal” or “traditional” state of things.</p>
+
+<p>As soon as we acknowledge that, both as architects and as the general public, then we can start to consider what sort of society we would like to live in and how that might be reflected in the spaces that we occupy, inhabit, and build for ourselves. We give ourselves the agency to intervene directly in our everyday lives.</p>
+
+<p><img src="/assets/images/jack-self-common-stock.jpg" alt="Interior design by REAL Foundation for 'Common Stock: Sharing as Luxury,' the fourth tower in the Derivative Architecture series." />
+<span class="caption">Interior design by REAL Foundation for ‘Common Stock: Sharing as Luxury,’ the fourth tower in the Derivative Architecture series.</span></p>
+
+<p><strong>Christina and Leo</strong>: You’ve already spoken a little bit about how those alternative realities start with the very basic methods of structuring a project. What do those first steps look like in practice, and what alternative approaches do you take when you work with clients and collaborators?</p>
+
+<p><strong>Jack Self</strong>: We don’t have clients in a typical way. We always enter into partnerships in order to create a different type of power dynamic between the designer and what traditionally is called a client.</p>
+
+<p>For example, we recently designed an addendum to a standard building contract in the UK in order to work with a client who couldn’t afford to pay for our services. We said, “Okay, fine. We will take as much as you can afford to pay us now.” But rather than debase our value by doing the project at a lower rate, which is normally what happens, we asked for a percentage of the resale value of the property.</p>
+
+<p>Now, that client might live in that property for 15 or 20 years. We have no idea. But hopefully the property market will continue to rise, and we can take the risk of not being paid now and turn it into an advantage. We’re also, in effect, then in a partnership with the client because we’re saying, “Well, we have a stake in this.” There is much more of a collaborative level of thinking.</p>
+
+<p>We’d like to take that contract addendum, which is of course a legal document, and make it into an open source template that other architects can freely use in their own projects and present as an option to a client as part of their fee structures. For us, part of the communication is being able to take individual examples that we’re trying to apply in built work and make them readily accessible to other architects so that they don’t have to reinvent these models.</p>
+
+<iframe src="https://player.vimeo.com/video/66775083" width="500" height="281" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+<p><span class="caption"></span></p>
+
+<p><strong>Christina and Leo</strong>: We also wanted to ask you about digital platforms and the sharing economy. Obviously a lot of your projects are built on top of a <a href="https://www.are.na/brian-justie/bratton-s-stack">“stack”</a> made up of land, physical structures, financing, and now another layer, which includes digital platforms for renting domestic space. What’s your take on things like “WeWork” transforming into “WeLive,” where digitally-oriented lifestyle businesses are starting to “disrupt” the housing market?</p>
+
+<p><strong>Jack Self</strong>: I think we have to be very careful with the sharing economy because it is presented often under the guise of being a decentralized, non-hierarchical network, with the ability to more fairly distribute profits and resources in society. But at the moment, it mainly involves the exploitation of latent value within our cities and our personal objects.</p>
+
+<p>Until the really large sharing economy companies like Uber or AirBnB are collectively owned, until they become cooperatives in which the profit is proportionately distributed amongst users of the network, then they will always effectively be traditional corporate models that are just exploiting other people’s resources.</p>
+
+<p>This is why we’re so interested in viable alternatives for shared property ownership, so we can break the cycle of perpetual debt and perpetual rent. We don’t believe that level of debt is necessary at all. To kind of paraphrase Al Gore, we have already all the resources we require. They’re just extremely badly distributed amongst us.</p>
+
+<p><strong>Christina and Leo</strong>: Do you see any platform cooperative models that do show promise in real estate or architecture? You mentioned the Weissenhofsiedlung, which was a workers’ housing prototype that really shows how invested the early modernists were in progressive social change. Do you see that spirit reappearing anywhere today?</p>
+
+<p><strong>Jack Self</strong>: Yes, absolutely. There are great examples in Germany, in France, Austria, and Switzerland. All have extremely sophisticated models for cooperative ownership and cooperative housing.</p>
+
+<p>There are not so many examples in the UK, but I do think the culture is changing, and we are beginning to see a few promising experiments. A lot of the time REAL Foundation attempts to create templates or models that can then be applied in many different ways according to their context rather than the projects themselves. We do that because we want to create something which is repeatable enough to create meaningful change.</p>
+
+<p>I also believe the era of the star architect is in decline, and we should no longer be focusing on the singular individual who is capable of inventing a solution to all of our problems at a stroke. We should really be working in networks and groups with other people to find how our driving ideology can manifest itself in individual instances to move towards that change that we would like to see.</p>
+
+<p>It’s basically systemic thinking, both at the level of immaterial information exchange systems—contractual design, for example, financial system design, political and bureaucratic design—as well as aesthetic and spatial design, which go hand in hand.</p>
+
+<p><img src="/assets/images/jack-self-default-grey.jpg" alt="Interior view of 'Default Grey,' a proposal for a domestic tower that provides inhabitants autonomy from debt and enough anonymity to shield them from surveillance." />
+<span class="caption">Interior view of ‘Default Grey,’ a proposal for a domestic tower that provides inhabitants autonomy from debt and enough anonymity to shield them from surveillance.</span></p>
+
+<p><strong>Christina and Leo</strong>: To wrap up, how do you share these complicated ideas about housing, finance, and building processes with a wider cultural audience? How do you see yourself broadening the accessibility of new ways to practice architecture?</p>
+
+<p><strong>Jack Self</strong>: As it stands, that’s one of the reasons why we do cultural programs and cultural activities, which have a strong relationship to a general audience. We’re very interested in exhibitions and their ability to both design space, but also to translate complex ideas into an experience which most people can understand.</p>
+
+<p>We also communicate through a magazine, <a href="https://realreview.org">REAL Review</a>, which requires a certain level of commitment, but is supported through a Kickstarter campaign by an interested set of readers. We also do quite a lot of publishing work, and we produce books which are explicitly about these types of issues we’re talking about. And of course we curate exhibitions as part of our cultural work, and that’s extremely important.</p>
+
+<p>In the end, we want to share what we’re learning from experimental projects as widely as possible with other architects. We should be able to say, “Hey, that’s an interesting finance model for that building, or interesting procurement method, or interesting construction method. Let’s just copy-paste it.”</p>
+
+<p>The future of that, I would hope, is to be able to even run courses—weekend courses or workshops—which are about providing those types of tools and networks to other architects. At the moment, we’ve mainly been focusing on the communication of these ideas about the politics of space to a general audience, but we’re increasingly looking for ways in which we can use some of our work to educate architects and to the general public about more equitable ways of making space.</p>
+
+      </div>
+    </div>
+
+    <div class="col-xs-1">
+       <div class="position">
+          <div class="rotate">
+            <span class="page-heading">Notes</span>
+          </div>
+        </div>
+    </div>
+    <div class="col-xs-11 col-sm-3" style="padding-left: 0px; padding-right: 15px;">
+      
+        <ol class="notes">
+  <div class="arena-content">
+    
+      <li style="padding-bottom: 15px; margin-top: 0px;">
+          
+            <!--<a target="_blank" href="https://www.are.na/block/1114910">-->
+            <a class="arena-content" target="_blank" href="https://www.are.na/block/1114910"> <!--http://perimeterbooks.com/Grand-Domestic-Revolution-Handbook-->
+            <div style="padding-bottom: 10px;">Grand Domestic Revolution Handbook - Perimeter Books</div>
+        
+        
+          <img style="vertical-align: top;" src="https://d2w9rnfcy7mm78.cloudfront.net/1114910/display_4b34e5ef29110b83b3f2871f50468df1">
+        
+        
+            </a>
+      </li>
+    
+      <li style="padding-bottom: 15px; margin-top: 0px;">
+          
+            <!--<a target="_blank" href="https://www.are.na/block/1114925">-->
+            <a class="arena-content" target="_blank" href="https://www.are.na/block/1114925"> <!--http://www.jackself.com/content/Press/PDF/SELF_DerivativeArchitecture_RealEstates.pdf-->
+            <div style="padding-bottom: 10px;">SELF_DerivativeArchitecture_RealEstates.pdf</div>
+        
+        
+          <img style="vertical-align: top;" src="https://d2w9rnfcy7mm78.cloudfront.net/1114925/display_b805d6c0b25425b420170707-4-vqdn1y.jpg">
+        
+        
+            </a>
+      </li>
+    
+      <li style="padding-bottom: 15px; margin-top: 0px;">
+          
+            <!--<a target="_blank" href="https://www.are.na/block/1114929">-->
+            <a class="arena-content" target="_blank" href="https://www.are.na/block/1114929"> <!--http://nycreic.com/-->
+            <div style="padding-bottom: 10px;">NYC Real Estate Investment Cooperative | New York City Real Estate Investment Cooperative (NYC REIC) leverages the patient investments and political power of members to secure permanently affordable commercial properties in NYC.</div>
+        
+        
+          <img style="vertical-align: top;" src="https://d2w9rnfcy7mm78.cloudfront.net/1114929/display_a7d5c6ac0a14573ea4d0cc9d3c6490a0">
+        
+        
+            </a>
+      </li>
+    
+      <li style="padding-bottom: 15px; margin-top: 0px;">
+          
+            <!--<a target="_blank" href="https://www.are.na/block/1114936">-->
+            <a class="arena-content" target="_blank" href="https://www.are.na/block/1114936"> <!--http://www.newyorker.com/business/currency/the-new-guilded-age-->
+            <div style="padding-bottom: 10px;">The New Guilded Age</div>
+        
+        
+          <img style="vertical-align: top;" src="https://d2w9rnfcy7mm78.cloudfront.net/1114936/display_87e45e5f0f5d8290ed61854b69c3b646">
+        
+        
+            </a>
+      </li>
+    
+      <li style="padding-bottom: 15px; margin-top: 0px;">
+          
+            <!--<a target="_blank" href="https://www.are.na/block/1114943">-->
+            <a class="arena-content" target="_blank" href="https://www.are.na/block/1114943"> <!--http://urbanomnibus.net/2014/05/cooperative-city-cooperative-community/-->
+            <div style="padding-bottom: 10px;">Cooperative City, Cooperative Community</div>
+        
+        
+          <img style="vertical-align: top;" src="https://d2w9rnfcy7mm78.cloudfront.net/1114943/display_61ffc6948ad61a80773d2f3eaafa8983">
+        
+        
+            </a>
+      </li>
+    
+      <li style="padding-bottom: 15px; margin-top: 0px;">
+          
+            <!--<a target="_blank" href="https://www.are.na/block/1114944">-->
+            <a class="arena-content" target="_blank" href="https://www.are.na/block/1114944"> <!--http://urbanomnibus.net/2016/03/the-quest-for-community-run-commercial-space/-->
+            <div style="padding-bottom: 10px;">The Quest for Community-Run Commercial Space</div>
+        
+        
+          <img style="vertical-align: top;" src="https://d2w9rnfcy7mm78.cloudfront.net/1114944/display_c95adb941546814e638b3f0da540af81">
+        
+        
+            </a>
+      </li>
+    
+      <li style="padding-bottom: 15px; margin-top: 0px;">
+          
+            <!--<a target="_blank" href="https://www.are.na/block/1114945">-->
+            <a class="arena-content" target="_blank" href="https://www.are.na/block/1114945"> <!--http://urbanomnibus.net/2014/04/the-value-of-land-how-community-land-trusts-maintain-housing-affordability/-->
+            <div style="padding-bottom: 10px;">The Value of Land: How Community Land Trusts Maintain Housing Affordability</div>
+        
+        
+          <img style="vertical-align: top;" src="https://d2w9rnfcy7mm78.cloudfront.net/1114945/display_1a264c024c4662078e5a7bd5bb4463c5">
+        
+        
+            </a>
+      </li>
+    
+      <li style="padding-bottom: 15px; margin-top: 0px;">
+          
+            <!--<a target="_blank" href="https://www.are.na/block/1114946">-->
+            <a class="arena-content" target="_blank" href="https://www.are.na/block/1114946"> <!--http://urbanomnibus.net/2016/02/venture-capitals-commune/-->
+            <div style="padding-bottom: 10px;">Venture Capital's Commune</div>
+        
+        
+          <img style="vertical-align: top;" src="https://d2w9rnfcy7mm78.cloudfront.net/1114946/display_aca645aef70353daefb1dc31035bd584">
+        
+        
+            </a>
+      </li>
+    
+      <li style="padding-bottom: 15px; margin-top: 0px;">
+          
+            <!--<a target="_blank" href="https://www.are.na/block/1114951">-->
+            <a class="arena-content" target="_blank" href="https://www.are.na/block/1114951"> <!--http://urbanomnibus.net/redux/wp-content/uploads/2010/03/LABOR-AND-HOUSING-IN-NEW-YORK-CITY.pdf-->
+            <div style="padding-bottom: 10px;">LABOR-AND-HOUSING-IN-NEW-YORK-CITY.pdf</div>
+        
+        
+          <img style="vertical-align: top;" src="https://d2w9rnfcy7mm78.cloudfront.net/1114951/display_1a24891d87dd1af020170707-4-15ntk32.jpg">
+        
+        
+            </a>
+      </li>
+    
+      <li style="padding-bottom: 15px; margin-top: 0px;">
+          
+            <!--<a target="_blank" href="https://www.are.na/block/1114953">-->
+            <a class="arena-content" target="_blank" href="https://www.are.na/block/1114953"> <!--https://www.theatlantic.com/business/archive/2015/07/affordable-housing-always/397637/-->
+            <div style="padding-bottom: 10px;">How to Make Housing Affordable, Forever</div>
+        
+        
+          <img style="vertical-align: top;" src="https://d2w9rnfcy7mm78.cloudfront.net/1114953/display_9adba8e72fd8cffeb8cd1ed100f4ba4f">
+        
+        
+            </a>
+      </li>
+    
+      <li style="padding-bottom: 15px; margin-top: 0px;">
+          
+            <!--<a target="_blank" href="https://www.are.na/block/1114954">-->
+            <a class="arena-content" target="_blank" href="https://www.are.na/block/1114954"> <!--http://www.londonclt.org/-->
+            <div style="padding-bottom: 10px;">- London Community Land Trust</div>
+        
+        
+          <img style="vertical-align: top;" src="https://d2w9rnfcy7mm78.cloudfront.net/1114954/display_4bfc7fc1aef995e14d025dbbf57c53d3">
+        
+        
+            </a>
+      </li>
+    
+      <li style="padding-bottom: 15px; margin-top: 0px;">
+          
+            <!--<a target="_blank" href="https://www.are.na/block/1114955">-->
+            <a class="arena-content" target="_blank" href="https://www.are.na/block/1114955"> <!--https://www.theguardian.com/cities/2017/jan/16/radical-model-housing-crisis-property-prices-income-community-land-trusts-->
+            <div style="padding-bottom: 10px;">The radical model fighting the housing crisis: property prices based on income</div>
+        
+        
+          <img style="vertical-align: top;" src="https://d2w9rnfcy7mm78.cloudfront.net/1114955/display_9a0e65605628193dc32efaf60e415b07">
+        
+        
+            </a>
+      </li>
+    
+      <li style="padding-bottom: 15px; margin-top: 0px;">
+          
+            <!--<a target="_blank" href="https://www.are.na/block/1114957">-->
+            <a class="arena-content" target="_blank" href="https://www.are.na/block/1114957"> <!--https://www.theguardian.com/artanddesign/architecture-design-blog/2015/may/12/assemble-turner-prize-2015-wildcard-how-the-young-architecture-crew-assemble-rocked-the-art-world-->
+            <div style="padding-bottom: 10px;">The street that might win the Turner prize: how Assemble are transforming Toxteth</div>
+        
+        
+          <img style="vertical-align: top;" src="https://d2w9rnfcy7mm78.cloudfront.net/1114957/display_36509d9ccf30d5426c2079e23d15a961">
+        
+        
+            </a>
+      </li>
+    
+      <li style="padding-bottom: 15px; margin-top: 0px;">
+          
+            <!--<a target="_blank" href="https://www.are.na/block/1114958">-->
+            <a class="arena-content" target="_blank" href="https://www.are.na/block/1114958"> <!--http://www.archdaily.com/778435/assemble-awarded-the-2015-turner-prize-for-granby-four-streets-->
+            <div style="padding-bottom: 10px;">Assemble Awarded the 2015 Turner Prize for Granby Four Streets</div>
+        
+        
+          <img style="vertical-align: top;" src="https://d2w9rnfcy7mm78.cloudfront.net/1114958/display_7d1db7fc89cf80cd42f3d4787682ebc1">
+        
+        
+            </a>
+      </li>
+    
+      <li style="padding-bottom: 15px; margin-top: 0px;">
+          
+            <!--<a target="_blank" href="https://www.are.na/block/1115043">-->
+            <a class="arena-content" target="_blank" href="https://www.are.na/block/1115043"> <!--http://www.jackself.com/content/Press/PDF/SELF_Home%20Economics.pdf-->
+            <div style="padding-bottom: 10px;">SELF_Home-Economics.pdf</div>
+        
+        
+          <img style="vertical-align: top;" src="https://d2w9rnfcy7mm78.cloudfront.net/1115043/display_c9b28c6b4dc7e20f20170707-4-1easf5s.jpg">
+        
+        
+            </a>
+      </li>
+    
+      <li style="padding-bottom: 15px; margin-top: 0px;">
+          
+            <!--<a target="_blank" href="https://www.are.na/block/1115045">-->
+            <a class="arena-content" target="_blank" href="https://www.are.na/block/1115045"> <!--http://www.jackself.com/content/Press/PDF/SELF_MOS.pdf-->
+            <div style="padding-bottom: 10px;">SELF_MOS.pdf</div>
+        
+        
+          <img style="vertical-align: top;" src="https://d2w9rnfcy7mm78.cloudfront.net/1115045/display_4f97a1e4696495e520170707-4-1iuime7.jpg">
+        
+        
+            </a>
+      </li>
+    
+      <li style="padding-bottom: 15px; margin-top: 0px;">
+          
+            <!--<a target="_blank" href="https://www.are.na/block/1115047">-->
+            <a class="arena-content" target="_blank" href="https://www.are.na/block/1115047"> <!--http://www.jackself.com/content/Press/PDF/SELF_ARHome%20Economics.pdf-->
+            <div style="padding-bottom: 10px;">SELF_ARHome-Economics.pdf</div>
+        
+        
+          <img style="vertical-align: top;" src="https://d2w9rnfcy7mm78.cloudfront.net/1115047/display_ca44c1ea9fccf69a20170707-4-i27sf1.jpg">
+        
+        
+            </a>
+      </li>
+    
+      <li style="padding-bottom: 15px; margin-top: 0px;">
+          
+            
+            <a class="arena-content" target="_blank" href="https://www.are.na/dan-taeyoung/viable-utopias-cooperatives">
+              <div class="channel-block-closed">
+                <div class="channel-title-closed">Viable Utopias (Cooperatives)</div>
+              </div>
+            </a>
+            
+          
+        
+        
+            </a>
+      </li>
+    
+      <li style="padding-bottom: 15px; margin-top: 0px;">
+          
+            <!--<a target="_blank" href="https://www.are.na/block/1123264">-->
+            <a class="arena-content" target="_blank" href="https://www.are.na/block/1123264"> <!---->
+            <div style="padding-bottom: 10px;">Home Economics</div>
+        
+        
+          <img style="vertical-align: top;" src="https://d2w9rnfcy7mm78.cloudfront.net/1123264/display_1d1907a29007ef5a0798624f05ee16c7.jpg">
+        
+        
+            </a>
+      </li>
+    
+      <li style="padding-bottom: 15px; margin-top: 0px;">
+          
+            <!--<a target="_blank" href="https://www.are.na/block/1123266">-->
+            <a class="arena-content" target="_blank" href="https://www.are.na/block/1123266"> <!---->
+            <div style="padding-bottom: 10px;">Home Economics</div>
+        
+        
+          <img style="vertical-align: top;" src="https://d2w9rnfcy7mm78.cloudfront.net/1123266/display_5c4f4523da4b99e5ba900b7f5b47f336.jpg">
+        
+        
+            </a>
+      </li>
+    
+  </div>
+</ol>
+
+      
+    </div>
+  </div>
+
+
+ <div class="row no-gutters">
+    <div class="col-xs-1">
+       <div class="position">
+          <div class="rotate">
+            <span class="page-heading">Related</span>
+          </div>
+        </div>
+    </div>
+    <div class="col-sm-11">
+      <div class="page-content">
+        
+
+
+
+  
+  
+
+  
+
+  
+  <div class="related-container">
+    <a style="text-decoration: none;" href="/blog/a-taxonomy-of-urban-branded-space.html">
+      <img style="width: 100%; height: auto;" src="/assets/images/taxonomy-header.jpg">
+      <div class="related-title">A Taxonomy of Urban Branded Space</div>
+      <div class="related-meta">by Leo Shaw
+      <br>July 14, 2017</div>
+    </a>
+  </div>
+    
+    
+  
+
+
+  
+  
+
+  
+
+  
+
+
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</article>
+
+
+
+          <footer class="footer-down">
+            <div class="footer-center">
+              <!-- Begin MailChimp Signup Form -->
+              <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+              <style type="text/css">
+              	#mc_embed_signup{clear:left; width:100%;}
+              	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+              	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+              </style>
+              <div id="mc_embed_signup">
+              <form action="//consortia.us10.list-manage.com/subscribe/post?u=33feeb04d1f5e4f298bcdfccc&amp;id=f2feb45f04" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                  <div id="mc_embed_signup_scroll">
+              	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_33feeb04d1f5e4f298bcdfccc_f2feb45f04" tabindex="-1" value=""></div>
+                  <div class="clear"><input type="submit" value="subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                  </div>
+              </form>
+              </div>
+
+              <!--End mc_embed_signup-->
+            </div>
+          </footer>
+
+
+  </body>
+
+
+</html>
